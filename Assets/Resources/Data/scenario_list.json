@@ -1,0 +1,283 @@
+{
+  "scenario": [
+    {
+      "type": "tutorial",
+      "localize_key": "Scenario.Tutorial",
+      "desc": "Scenario.Tutorial.Desc",
+      "thumbnail_path": "Data/Tutorial/Tutorial_thumbnail",
+      "point_skill": [
+        "Skill.PationCheck",
+        "Skill.VS",
+        "Skill.DoctorCall"
+      ],
+      "skill_list": [],
+      "play_time": "15",
+      "difficulty": 1,
+      "mode": [
+        0
+      ]
+    },
+    {
+      "type": "pneumonia",
+      "localize_key": "Scenario.Pneumonia",
+      "desc": "Scenario.Pneumonia.Desc",
+      "thumbnail_path": "Data/Pneumonia/Penumonia_thumbnail",
+      "point_skill": [
+        "Skill.Oxygen",
+        "Skill.Suction",
+        "Skill.IV",
+        "Skill.Infusionpump"
+      ],
+      "skill_list": [
+        {
+          "type": "patient_monitor",
+          "localize_key": "SkillMode.patient_monitor",
+          "desc": "SkillMode.patient_monitor.Desc",
+          "thumbnail_path": "Data/SkillMode/Thumbnail/thumbnail_patient_monitor",
+          "point_skill": [
+            "Skill.BP_Cuff",
+            "Skill.NIBP",
+            "Skill.ECG",
+            "Skill.PulseOximeter"
+          ]
+        },
+        {
+          "type": "pneumonia_iv_bolus",
+          "localize_key": "SkillMode.pneumonia_iv_bolus",
+          "desc": "SkillMode.pneumonia_iv_bolus.Desc",
+          "thumbnail_path": "Data/SkillMode/Thumbnail/thumbnail_iv_bolus",
+          "point_skill": [
+            "Skill.Medication_IV",
+            "Skill.IV_Bolus"
+          ]
+        },
+        {
+          "type": "infusion_pump",
+          "localize_key": "SkillMode.infusion_pump",
+          "desc": "SkillMode.infusion_pump.Desc",
+          "thumbnail_path": "Data/SkillMode/Thumbnail/thumbnail_infusion_pump",
+          "point_skill": [
+            "Skill.Medication_Fluid",
+            "Skill.InfusionPump"
+          ]
+        },
+        {
+          "type": "suction",
+          "localize_key": "SkillMode.suction",
+          "desc": "SkillMode.suction.Desc",
+          "thumbnail_path": "Data/SkillMode/Thumbnail/thumbnail_suction",
+          "point_skill": [
+            "Skill.Suction"
+          ]
+        },
+        {
+          "type": "pneumonia_high_flow",
+          "localize_key": "SkillMode.pneumonia_high_flow",
+          "desc": "SkillMode.pneumonia_high_flow.Desc",
+          "thumbnail_path": "Data/SkillMode/Thumbnail/thumbnail_nasal_cannula",
+          "point_skill": [
+            "Skill.HighFlow"
+          ]
+        }
+      ],
+      "play_time": "30",
+      "difficulty": 2,
+      "mode": [
+        0,
+        1
+      ]
+    },
+    {
+      "type": "bradycardia",
+      "localize_key": "Scenario.Bradycardia",
+      "desc": "Scenario.Bradycardia.Desc",
+      "thumbnail_path": "Data/Bradycardia/Bradycardia_thumbnail",
+      "point_skill": [
+        "Skill.IV_bolus",
+        "Skill.Oxygen",
+        "Skill.Defibrillator"
+      ],
+      "skill_list": [
+        {
+          "type": "bradycardia_patient_monitor",
+          "localize_key": "SkillMode.bradycardia_patient_monitor",
+          "desc": "SkillMode.bradycardia_patient_monitor.Desc",
+          "thumbnail_path": "Data/SkillMode/Thumbnail/thumbnail_patient_monitor",
+          "point_skill": [
+            "Skill.BP_Cuff",
+            "Skill.NIBP",
+            "Skill.ECG",
+            "Skill.PulseOximeter"
+          ]
+        },
+        {
+          "type": "po",
+          "localize_key": "SkillMode.po",
+          "desc": "SkillMode.po.Desc",
+          "thumbnail_path": "Data/SkillMode/Thumbnail/thumbnail_po",
+          "point_skill": [
+            "Skill.Medication_PO",
+            "Skill.PO"
+          ]
+        },
+        {
+          "type": "bradycardia_iv_bolus",
+          "localize_key": "SkillMode.bradycardia_iv_bolus",
+          "desc": "SkillMode.bradycardia_iv_bolus.Desc",
+          "thumbnail_path": "Data/SkillMode/Thumbnail/thumbnail_iv_bolus",
+          "point_skill": [
+            "Skill.Medication_IV",
+            "Skill.IV_Bolus"
+          ]
+        },
+        {
+          "type": "defibrillator",
+          "localize_key": "SkillMode.defibrillator",
+          "desc": "SkillMode.defibrillator.Desc",
+          "thumbnail_path": "Data/SkillMode/Thumbnail/thumbnail_defibrillator",
+          "point_skill": [
+            "Skill.PacerMode",
+            "Skill.DefibrillationMode"
+          ]
+        },
+        {
+          "type": "nasal_cannula",
+          "localize_key": "SkillMode.nasal_cannula",
+          "desc": "SkillMode.nasal_cannula.Desc",
+          "thumbnail_path": "Data/SkillMode/Thumbnail/thumbnail_nasal_cannula",
+          "point_skill": [
+            "Skill.NasalCannula"
+          ]
+        }
+      ],
+      "play_time": "30",
+      "difficulty": 2,
+      "mode": [
+        0,
+        1
+      ]
+    },
+    {
+      "type": "antepartumcare",
+      "localize_key": "Scenario.AntepartumCare",
+      "desc": "Scenario.AntepartumCare.Desc",
+      "thumbnail_path": "Data/AntepartumCare/AntepartumCare_thumbnail",
+      "point_skill": [],
+      "skill_list": [
+        {
+          "type": "antepartumcare_leopold_maneuver",
+          "localize_key": "SkillMode.antepartumcare_leopold_maneuver",
+          "desc": "SkillMode.antepartumcare_leopold_maneuver.Desc",
+          "thumbnail_path": "Data/SkillMode/Thumbnail/thumbnail_leopold_maneuver",
+          "point_skill": []
+        },
+        {
+          "type": "antepartumcare_doppler",
+          "localize_key": "SkillMode.antepartumcare_doppler",
+          "desc": "SkillMode.antepartumcare_doppler.Desc",
+          "thumbnail_path": "Data/SkillMode/Thumbnail/thumbnail_doppler",
+          "point_skill": []
+        },
+        {
+          "type": "antepartumcare_fetal_monitor",
+          "localize_key": "SkillMode.antepartumcare_fetal_monitor",
+          "desc": "SkillMode.antepartumcare_fetal_monitor.Desc",
+          "thumbnail_path": "Data/SkillMode/Thumbnail/thumbnail_fetalmonitor",
+          "point_skill": []
+        },
+        {
+          "type": "antepartumcare_piggy_back",
+          "localize_key": "SkillMode.antepartumcare_piggy_back",
+          "desc": "SkillMode.antepartumcare_piggy_back.Desc",
+          "thumbnail_path": "Data/SkillMode/Thumbnail/thumbnail_piggyback",
+          "point_skill": []
+        }
+      ],
+      "play_time": "10-20",
+      "difficulty": 3,
+      "mode": [
+        0,
+        1
+      ]
+    },
+    {
+      "type": "intrapartumcare",
+      "localize_key": "Scenario.IntrapartumCare",
+      "desc": "Scenario.IntrapartumCare.Desc",
+      "thumbnail_path": "Data/IntrapartumCare/IntrapartumCare_thumbnail",
+      "point_skill": [],
+      "skill_list": [
+        {
+          "type": "intrapartumcare_simplemask",
+          "localize_key": "SkillMode.intrapartumcare_simplemask",
+          "desc": "SkillMode.intrapartumcare_simplemask.Desc",
+          "thumbnail_path": "Data/SkillMode/Thumbnail/thumbnail_simplemask",
+          "point_skill": []
+        },
+        {
+          "type": "intrapartumcare_deliverythird",
+          "localize_key": "SkillMode.intrapartumcare_deliverythird",
+          "desc": "SkillMode.intrapartumcare_deliverythird.Desc",
+          "thumbnail_path": "Data/SkillMode/Thumbnail/thumbnail_deliverythird",
+          "point_skill": []
+        }
+      ],
+      "play_time": "10-20",
+      "difficulty": 3,
+      "mode": [
+        0,
+        1
+      ]
+    },
+    {
+      "type": "evarixbleeding",
+      "localize_key": "Scenario.EVarixBleeding",
+      "desc": "Scenario.EVarixBleeding.Desc",
+      "thumbnail_path": "Data/EVarixBleeding/EVarixBleeding_thumbnail",
+      "point_skill": [],
+      "skill_list": [
+        {
+          "type": "evarixbleeding_patient_monitor",
+          "localize_key": "SkillMode.evarixbleeding_patient_monitor",
+          "desc": "SkillMode.evarixbleeding_patient_monitor.Desc",
+          "thumbnail_path": "Data/SkillMode/Thumbnail/thumbnail_patient_monitor",
+          "point_skill": []
+        },
+        {
+          "type": "evarixbleeding_blood_draw",
+          "localize_key": "SkillMode.evarixbleeding_blood_draw",
+          "desc": "SkillMode.evarixbleeding_blood_draw.Desc",
+          "thumbnail_path": "Data/SkillMode/Thumbnail/thumbnail_iv_bolus",
+          "point_skill": []
+        },
+        {
+          "type": "evarixbleeding_iv_bolus",
+          "localize_key": "SkillMode.evarixbleeding_iv_bolus",
+          "desc": "",
+          "thumbnail_path": "Data/SkillMode/Thumbnail/thumbnail_iv_bolus",
+          "point_skill": []
+        },
+        {
+          "type": "evarixbleeding_infusion_pump",
+          "localize_key": "SkillMode.evarixbleeding_infusion_pump",
+          "desc": "",
+          "thumbnail_path": "Data/SkillMode/Thumbnail/thumbnail_infusion_pump",
+          "point_skill": []
+        },
+        {
+          "type": "evarixbleeding_piggy_back",
+          "localize_key": "SkillMode.evarixbleeding_piggy_back",
+          "desc": "",
+          "thumbnail_path": "Data/SkillMode/Thumbnail/thumbnail_piggyback",
+          "point_skill": []
+        }
+      ],
+      "play_time": "15",
+      "difficulty": 2,
+      "mode": [
+        0,
+        1
+      ]
+    }
+  ]
+}

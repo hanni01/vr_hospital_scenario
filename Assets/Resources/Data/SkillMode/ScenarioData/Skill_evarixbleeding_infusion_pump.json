@@ -1,0 +1,224 @@
+{
+  "localization_url": "1uFLVZ2IWFxpSN2xMXSS6hGpYfJ3x9r8IcQl9XhLKnEo",
+  "localization_sheets": [
+    "common",
+    "common_skill",
+    "scenario_evarixbleeding"
+  ],
+  "patient_talk_path": "Data/EVarixBleeding/TalkData_EVarixBleeding",
+  "emr": "Data/EVarixBleeding/EMR_EVarixBleeding",
+  "scenario_name": "evarixbleeding",
+  "tooltable_setting": [
+    {
+      "table_name": "medication_dw100",
+      "tool_setting": [
+        {
+          "tool_name": "11",
+          "available_spot": [],
+          "duplicate": 1,
+          "value1": [
+            "6",
+            "DW",
+            "100mL",
+            "+ Pantoloc 80mg"
+          ],
+          "value2": [
+            "1",
+            "IV Mix. 10cc/hr"
+          ],
+          "value3": [
+            "Pantoloc 80mg + 5% DW 100mL",
+            "",
+            "IVF"
+          ]
+        },
+        {
+          "tool_name": "8",
+          "available_spot": [
+            42
+          ],
+          "duplicate": 1
+        },
+        {
+          "tool_name": "14",
+          "available_spot": [
+            21
+          ],
+          "duplicate": 1,
+          "value1": [
+            "DW",
+            "100mL"
+          ]
+        },
+        {
+          "tool_name": "22",
+          "available_spot": [
+            41
+          ],
+          "duplicate": 1,
+          "value1": [
+            "60"
+          ]
+        },
+        {
+          "tool_name": "13",
+          "available_spot": [
+            46
+          ],
+          "duplicate": 1
+        },
+        {
+          "tool_name": "73",
+          "available_spot": [],
+          "duplicate": 0,
+          "value1": [
+            "Pantoloc",
+            "80mg"
+          ]
+        }
+      ]
+    },
+    {
+      "table_name": "infusion_therapy",
+      "tool_setting": [
+        {
+          "tool_name": "27",
+          "available_spot": [],
+          "duplicate": 1
+        },
+        {
+          "tool_name": "7",
+          "available_spot": [
+            13,
+            14
+          ],
+          "duplicate": 1
+        },
+        {
+          "tool_name": "8",
+          "available_spot": [
+            11,
+            12
+          ],
+          "duplicate": 1
+        },
+        {
+          "tool_name": "9",
+          "available_spot": [
+            7,
+            8
+          ],
+          "duplicate": 1
+        },
+        {
+          "tool_name": "10",
+          "available_spot": [
+            9,
+            10
+          ],
+          "duplicate": 1
+        },
+        {
+          "tool_name": "15",
+          "available_spot": [
+            48
+          ],
+          "duplicate": 1,
+          "value1": [
+            "10"
+          ]
+        }
+      ]
+    }
+  ],
+  "stage": [
+    {
+      "id": "0",
+      "stage_event": {
+        "patient_data": {
+          "ecg_graph": "ecg_normal",
+          "pleth_graph": "pleth_normal",
+          "rr_graph": "rr_normal",
+          "hr_min": 105,
+          "hr_max": 105,
+          "rr_min": 20,
+          "rr_max": 20,
+          "bp_sp": 95,
+          "bp_dp": 80,
+          "spo2_min": 0.97,
+          "spo2_max": 0.97,
+          "bt": 36.8,
+          "face_animation": "idle",
+          "bode_animation": "idle",
+          "rhythm": "Normal sinus rhythm",
+          "breath_sound": "NormalBreathSound",
+          "heart_sound": "NormalHeartSound",
+          "bowel_sound": "NormalBowelSound"
+        },
+        "order": {
+          "add": [
+            {
+              "key": "Order.3.Add.2"
+            },
+            {
+              "key": "Order.3.Add.3",
+              "alert": false
+            }
+          ]
+        },
+        "send_message": [
+          {
+            "function_name": "ChangeClothes",
+            "param": ""
+          }
+        ]
+      },
+      "tool_settings": [
+        "medication_dw100"
+      ],
+      "skill_settings": [
+        "patient_talk",
+        "bracelet",
+        "medication",
+        "infusion_theraphy"
+      ],
+      "correct_skills": [
+        {
+          "skill": "medication",
+          "result": [
+            "mixed_pantoloc_dw",
+            "infusion_therapy"
+          ],
+          "total_progress": 0.5
+        },
+        {
+          "skill": "infusion_therapy",
+          "result": [
+            "dw",
+            "infusion_pump",
+            "10"
+          ],
+          "total_progress": 0.5
+        }
+      ],
+      "next_stage": "1"
+    },
+    {
+      "id": "1",
+      "stage_event": {
+        "send_message": [
+          {
+            "function_name": "ShowCompleteUI"
+          }
+        ]
+      },
+      "tool_settings": [],
+      "skill_settings": [
+        "patient_talk",
+        "bracelet"
+      ],
+      "correct_skills": [],
+      "next_stage": ""
+    }
+  ]
+}

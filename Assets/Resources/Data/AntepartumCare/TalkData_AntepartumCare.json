@@ -1,0 +1,302 @@
+{
+  "talk_list": [
+    "identification.1",
+    "identification.2",
+    "identification.3",
+    "familyhx.1",
+    "familyhx.2",
+    "medicalhx.1",
+    "medicalhx.2",
+    "medicalhx.3",
+    "obstetrichx.1",
+    "obstetrichx.2",
+    "obstetrichx.3",
+    "obstetrichx.4",
+    "obstetrichx.5",
+    "obstetrichx.6",
+    "obstetrichx.7",
+    "obstetrichx.8",
+    "obstetrichx.9",
+    "obstetrichx.10",
+    "obstetrichx.11",
+    "socialhx.1",
+    "socialhx.2",
+    "socialhx.3",
+    "socialhx.4",
+    "socialhx.5",
+    "socialhx.6",
+    "medication.1",
+    "medication.2",
+    "allergies.1",
+    "chiefcomplain.1",
+    "chiefcomplain.2",
+    "chiefcomplain.3"
+  ],
+  "voice_path": "Data/AntepartumCare/PatientVoice",
+  "voice": {
+    "patient_talk.identification.1": {
+      "0": "S04_Voice_I01",
+      "1": "S04_Voice_I01",
+      "2": "S04_Voice_I01",
+      "3": "S04_Voice_I01",
+      "4": "S04_Voice_I01",
+      "5": "S04_Voice_I01"
+    },
+    "patient_talk.identification.2": {
+      "0": "S04_Voice_I02",
+      "1": "S04_Voice_I02",
+      "2": "S04_Voice_I02",
+      "3": "S04_Voice_I02",
+      "4": "S04_Voice_I02",
+      "5": "S04_Voice_I02"
+    },
+    "patient_talk.identification.3": {
+      "0": "S04_Voice_I03",
+      "1": "S04_Voice_I03",
+      "2": "S04_Voice_I03",
+      "3": "S04_Voice_I03",
+      "4": "S04_Voice_I03",
+      "5": "S04_Voice_I03"
+    },
+    "patient_talk.familyhx.1": {
+      "0": "S04_Voice_no",
+      "1": "S04_Voice_no",
+      "2": "S04_Voice_no",
+      "3": "S04_Voice_no",
+      "4": "S04_Voice_no",
+      "5": "S04_Voice_no"
+    },
+    "patient_talk.familyhx.2": {
+      "0": "S04_Voice_no",
+      "1": "S04_Voice_no",
+      "2": "S04_Voice_no",
+      "3": "S04_Voice_no",
+      "4": "S04_Voice_no",
+      "5": "S04_Voice_no"
+    },
+    "patient_talk.medicalhx.1": {
+      "0": "S04_Voice_no",
+      "1": "S04_Voice_no",
+      "2": "S04_Voice_no",
+      "3": "S04_Voice_no",
+      "4": "S04_Voice_no",
+      "5": "S04_Voice_no"
+    },
+    "patient_talk.medicalhx.2": {
+      "0": "S04_Voice_no",
+      "1": "S04_Voice_no",
+      "2": "S04_Voice_no",
+      "3": "S04_Voice_no",
+      "4": "S04_Voice_no",
+      "5": "S04_Voice_no"
+    },
+    "patient_talk.medicalhx.3": {
+      "0": "S04_Voice_I04",
+      "1": "S04_Voice_I04",
+      "2": "S04_Voice_I04",
+      "3": "S04_Voice_I04",
+      "4": "S04_Voice_I04",
+      "5": "S04_Voice_I04"
+    },
+    "patient_talk.obstetrichx.1": {
+      "0": "S04_Voice_Oh01",
+      "1": "S04_Voice_Oh01",
+      "2": "S04_Voice_Oh01",
+      "3": "S04_Voice_Oh01",
+      "4": "S04_Voice_Oh01",
+      "5": "S04_Voice_Oh01"
+    },
+    "patient_talk.obstetrichx.2": {
+      "0": "S04_Voice_Oh02",
+      "1": "S04_Voice_Oh02",
+      "2": "S04_Voice_Oh02",
+      "3": "S04_Voice_Oh02",
+      "4": "S04_Voice_Oh02",
+      "5": "S04_Voice_Oh02"
+    },
+    "patient_talk.obstetrichx.3": {
+      "0": "S04_Voice_Oh03",
+      "1": "S04_Voice_Oh03",
+      "2": "S04_Voice_Oh03",
+      "3": "S04_Voice_Oh03",
+      "4": "S04_Voice_Oh03",
+      "5": "S04_Voice_Oh03"
+    },
+    "patient_talk.obstetrichx.4": {
+      "0": "S04_Voice_Oh04",
+      "1": "S04_Voice_Oh04",
+      "2": "S04_Voice_Oh04",
+      "3": "S04_Voice_Oh04",
+      "4": "S04_Voice_Oh04",
+      "5": "S04_Voice_Oh04"
+    },
+    "patient_talk.obstetrichx.5": {
+      "0": "S04_Voice_Oh05",
+      "1": "S04_Voice_Oh05",
+      "2": "S04_Voice_Oh05",
+      "3": "S04_Voice_Oh05",
+      "4": "S04_Voice_Oh05",
+      "5": "S04_Voice_Oh05"
+    },
+    "patient_talk.obstetrichx.6": {
+      "0": "S04_Voice_Oh06",
+      "1": "S04_Voice_Oh06",
+      "2": "S04_Voice_Oh06",
+      "3": "S04_Voice_Oh06",
+      "4": "S04_Voice_Oh06",
+      "5": "S04_Voice_Oh06"
+    },
+    "patient_talk.obstetrichx.7": {
+      "0": "S04_Voice_Oh07",
+      "1": "S04_Voice_Oh07",
+      "2": "S04_Voice_Oh07",
+      "3": "S04_Voice_Oh07",
+      "4": "S04_Voice_Oh07",
+      "5": "S04_Voice_Oh07"
+    },
+    "patient_talk.obstetrichx.8": {
+      "0": "S04_Voice_Oh03",
+      "1": "S04_Voice_Oh03",
+      "2": "S04_Voice_Oh03",
+      "3": "S04_Voice_Oh03",
+      "4": "S04_Voice_Oh03",
+      "5": "S04_Voice_Oh03"
+    },
+    "patient_talk.obstetrichx.9": {
+      "0": "S04_Voice_Oh09",
+      "1": "S04_Voice_Oh09",
+      "2": "S04_Voice_Oh09",
+      "3": "S04_Voice_Oh09",
+      "4": "S04_Voice_Oh09",
+      "5": "S04_Voice_Oh09"
+    },
+    "patient_talk.obstetrichx.10": {
+      "0": "S04_Voice_Oh10",
+      "1": "S04_Voice_Oh10",
+      "2": "S04_Voice_Oh10",
+      "3": "S04_Voice_Oh10",
+      "4": "S04_Voice_Oh10",
+      "5": "S04_Voice_Oh10"
+    },
+    "patient_talk.obstetrichx.11": {
+      "0": "S04_Voice_Oh11",
+      "1": "S04_Voice_Oh11",
+      "2": "S04_Voice_Oh11",
+      "3": "S04_Voice_Oh11",
+      "4": "S04_Voice_Oh11",
+      "5": "S04_Voice_Oh11"
+    },
+    "patient_talk.socialhx.1": {
+      "0": "S04_Voice_Sh01",
+      "1": "S04_Voice_Sh01",
+      "2": "S04_Voice_Sh01",
+      "3": "S04_Voice_Sh01",
+      "4": "S04_Voice_Sh01",
+      "5": "S04_Voice_Sh01"
+    },
+    "patient_talk.socialhx.2": {
+      "0": "S04_Voice_Sh02",
+      "1": "S04_Voice_Sh02",
+      "2": "S04_Voice_Sh02",
+      "3": "S04_Voice_Sh02",
+      "4": "S04_Voice_Sh02",
+      "5": "S04_Voice_Sh02"
+    },
+    "patient_talk.socialhx.3": {
+      "0": "S04_Voice_Sh03",
+      "1": "S04_Voice_Sh03",
+      "2": "S04_Voice_Sh03",
+      "3": "S04_Voice_Sh03",
+      "4": "S04_Voice_Sh03",
+      "5": "S04_Voice_Sh03"
+    },
+    "patient_talk.socialhx.4": {
+      "0": "S04_Voice_Sh04",
+      "1": "S04_Voice_Sh04",
+      "2": "S04_Voice_Sh04",
+      "3": "S04_Voice_Sh04",
+      "4": "S04_Voice_Sh04",
+      "5": "S04_Voice_Sh04"
+    },
+    "patient_talk.socialhx.5": {
+      "0": "S04_Voice_no",
+      "1": "S04_Voice_no",
+      "2": "S04_Voice_no",
+      "3": "S04_Voice_no",
+      "4": "S04_Voice_no",
+      "5": "S04_Voice_no"
+    },
+    "patient_talk.socialhx.6": {
+      "0": "S04_Voice_Sh06",
+      "1": "S04_Voice_Sh06",
+      "2": "S04_Voice_Sh06",
+      "3": "S04_Voice_Sh06",
+      "4": "S04_Voice_Sh06",
+      "5": "S04_Voice_Sh06"
+    },
+    "patient_talk.medication.1": {
+      "0": "S04_Voice_no",
+      "1": "S04_Voice_no",
+      "2": "S04_Voice_no",
+      "3": "S04_Voice_no",
+      "4": "S04_Voice_no",
+      "5": "S04_Voice_no"
+    },
+    "patient_talk.medication.2": {
+      "0": "S04_Voice_M02",
+      "1": "S04_Voice_M02",
+      "2": "S04_Voice_M02",
+      "3": "S04_Voice_M02",
+      "4": "S04_Voice_M02",
+      "5": "S04_Voice_M02"
+    },
+    "patient_talk.allergies.1": {
+      "0": "S04_Voice_A01",
+      "1": "S04_Voice_A01",
+      "2": "S04_Voice_A01",
+      "3": "S04_Voice_A01",
+      "4": "S04_Voice_A01",
+      "5": "S04_Voice_A01"
+    },
+    "patient_talk.chiefcomplain.1": {
+      "0": "S04_Voice_CC01",
+      "1": "S04_Voice_CC01",
+      "2": "S04_Voice_CC01",
+      "3": "S04_Voice_CC01",
+      "4": "S04_Voice_CC01",
+      "5": "S04_Voice_CC01"
+    },
+    "patient_talk.chiefcomplain.2": {
+      "0": "S04_Voice_CC02",
+      "1": "S04_Voice_CC02",
+      "2": "S04_Voice_CC02",
+      "3": "S04_Voice_CC02",
+      "4": "S04_Voice_CC02",
+      "5": "S04_Voice_CC02"
+    },
+    "patient_talk.chiefcomplain.3": {
+      "0": "S04_Voice_CC03",
+      "1": "S04_Voice_CC03",
+      "2": "S04_Voice_CC03",
+      "3": "S04_Voice_CC03",
+      "4": "S04_Voice_CC03",
+      "5": "S04_Voice_CC03"
+    },
+    "patient_talk.stage1": {
+      "0": "S02_Voice_stage1",
+      "1": "S02_Voice_stage1",
+      "2": "S02_Voice_stage1",
+      "3": "S02_Voice_stage1",
+      "4": "S02_Voice_stage1",
+      "5": "S02_Voice_stage1"
+    },
+    "medicine.patientcheck": {
+      "0": "S04_Voice_medicine",
+      "1": "S04_Voice_medicine",
+      "2": "S04_Voice_medicine",
+      "3": "S04_Voice_medicine",
+      "4": "S04_Voice_medicine",
+      "5": "S04_Voice_medicine"
+    }
+  }
+}

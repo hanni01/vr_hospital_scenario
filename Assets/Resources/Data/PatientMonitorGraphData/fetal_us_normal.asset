@@ -1,0 +1,291 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb11f27a1e7f522429643fbff12b6653, type: 3}
+  m_Name: fetal_us_normal
+  m_EditorClassIdentifier: 
+  data:
+  - position: 0
+    value: 5.07
+    random_position: 1
+    random_value: 0.5
+  - position: 1.87
+    value: 3.24
+    random_position: 1
+    random_value: 0.5
+  - position: 3.8
+    value: 3.09
+    random_position: 1
+    random_value: 0.5
+  - position: 5.48
+    value: 1.37
+    random_position: 1
+    random_value: 0.5
+  - position: 8.17
+    value: 2.97
+    random_position: 1
+    random_value: 0.5
+  - position: 7.1
+    value: 4.98
+    random_position: 1
+    random_value: 0.5
+  - position: 9.8
+    value: 4.88
+    random_position: 1
+    random_value: 0.5
+  - position: 10.32
+    value: 2.16
+    random_position: 1
+    random_value: 0.5
+  - position: 11.5
+    value: 5.1
+    random_position: 1
+    random_value: 0.5
+  - position: 11.9
+    value: 2.16
+    random_position: 1
+    random_value: 0.5
+  - position: 14.7
+    value: 4.06
+    random_position: 1
+    random_value: 0.5
+  - position: 13.4
+    value: 5.31
+    random_position: 1
+    random_value: 0.5
+  - position: 16.4
+    value: 3.84
+    random_position: 1
+    random_value: 0.5
+  - position: 17.2
+    value: 5.04
+    random_position: 1
+    random_value: 0.5
+  - position: 18.3
+    value: 4.32
+    random_position: 1
+    random_value: 0.5
+  - position: 18.8
+    value: 3.16
+    random_position: 1
+    random_value: 0.5
+  - position: 21.4
+    value: 3.74
+    random_position: 1
+    random_value: 0.5
+  - position: 22.9
+    value: 6.39
+    random_position: 1
+    random_value: 0.5
+  - position: 23.6
+    value: 2.95
+    random_position: 1
+    random_value: 0.5
+  - position: 24.44
+    value: 6.06
+    random_position: 1
+    random_value: 0.5
+  - position: 25.9
+    value: 4
+    random_position: 1
+    random_value: 0.5
+  - position: 28.7
+    value: 6.26
+    random_position: 1
+    random_value: 0.5
+  - position: 29.76
+    value: 4.55
+    random_position: 1
+    random_value: 0.5
+  - position: 31.47
+    value: 5.96
+    random_position: 1
+    random_value: 0.5
+  - position: 33.19
+    value: 4.5
+    random_position: 1
+    random_value: 0.5
+  - position: 36.05
+    value: 3.95
+    random_position: 1
+    random_value: 0.5
+  - position: 40.05
+    value: 5.91
+    random_position: 1
+    random_value: 0.5
+  - position: 42.83
+    value: 2.94
+    random_position: 1
+    random_value: 0.5
+  - position: 42.9
+    value: 5.85
+    random_position: 1
+    random_value: 0.5
+  - position: 44.12
+    value: 4
+    random_position: 1
+    random_value: 0.5
+  - position: 46.6
+    value: 3.8
+    random_position: 1
+    random_value: 0.5
+  - position: 45.4
+    value: 5.8
+    random_position: 1
+    random_value: 0.5
+  - position: 47.11
+    value: 4.8
+    random_position: 1
+    random_value: 0.5
+  - position: 49.54
+    value: 3.6
+    random_position: 1
+    random_value: 0.5
+  - position: 51.05
+    value: 3.6
+    random_position: 1
+    random_value: 0.5
+  - position: 52.8
+    value: 5.5
+    random_position: 1
+    random_value: 0.5
+  - position: 54.58
+    value: 3.7
+    random_position: 1
+    random_value: 0.5
+  - position: 56.68
+    value: 4.7
+    random_position: 1
+    random_value: 0.5
+  - position: 58.8
+    value: 3.1
+    random_position: 1
+    random_value: 0.5
+  - position: 59.7
+    value: 5.2
+    random_position: 1
+    random_value: 0.5
+  - position: 60.93
+    value: 4.1
+    random_position: 1
+    random_value: 0.5
+  - position: 62.47
+    value: 4.96
+    random_position: 1
+    random_value: 0.5
+  - position: 65.3
+    value: 3.7
+    random_position: 1
+    random_value: 0.5
+  - position: 67.6
+    value: 6.1
+    random_position: 1
+    random_value: 0.5
+  - position: 68.9
+    value: 3.3
+    random_position: 1
+    random_value: 0.5
+  - position: 70.59
+    value: 5.1
+    random_position: 1
+    random_value: 0.5
+  - position: 71.9
+    value: 3.42
+    random_position: 1
+    random_value: 0.5
+  - position: 72.8
+    value: 5.32
+    random_position: 1
+    random_value: 0.5
+  - position: 74.12
+    value: 5.22
+    random_position: 1
+    random_value: 0.5
+  - position: 75.4
+    value: 4.31
+    random_position: 1
+    random_value: 0.5
+  - position: 78.7
+    value: 3.31
+    random_position: 1
+    random_value: 0.5
+  - position: 78.7
+    value: 5.1
+    random_position: 1
+    random_value: 0.5
+  - position: 79.25
+    value: 6
+    random_position: 1
+    random_value: 0.5
+  - position: 81.18
+    value: 4.3
+    random_position: 1
+    random_value: 0.5
+  - position: 82.22
+    value: 5.5
+    random_position: 1
+    random_value: 0.5
+  - position: 83.63
+    value: 3.7
+    random_position: 1
+    random_value: 0.5
+  - position: 85.87
+    value: 3.9
+    random_position: 1
+    random_value: 0.5
+  - position: 87.6
+    value: 3.9
+    random_position: 1
+    random_value: 0.5
+  - position: 88.11
+    value: 6.5
+    random_position: 1
+    random_value: 0.5
+  - position: 88.4
+    value: 4
+    random_position: 1
+    random_value: 0.5
+  - position: 90.29
+    value: 5.4
+    random_position: 1
+    random_value: 0.5
+  - position: 91.02
+    value: 3.1
+    random_position: 1
+    random_value: 0.5
+  - position: 91.58
+    value: 6.2
+    random_position: 1
+    random_value: 0.5
+  - position: 93.3
+    value: 7.2
+    random_position: 1
+    random_value: 0.5
+  - position: 95.6
+    value: 4.6
+    random_position: 1
+    random_value: 0.5
+  - position: 96.64
+    value: 6.6
+    random_position: 1
+    random_value: 0.5
+  - position: 98.47
+    value: 4.9
+    random_position: 1
+    random_value: 0.5
+  - position: 99.97
+    value: 3.9
+    random_position: 1
+    random_value: 0.5
+  interval_time: 0
+  alert_position: []
+  wave_count: 1
+  regular_random_value: 0

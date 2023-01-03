@@ -1,0 +1,187 @@
+{
+  "localization_url": "1uFLVZ2IWFxpSN2xMXSS6hGpYfJ3x9r8IcQl9XhLKnEo",
+  "localization_sheets": [
+    "common",
+    "common_skill",
+    "scenario_bradycardia"
+  ],
+  "patient_talk_path": "Data/Bradycardia/TalkData_Bradycardia",
+  "emr": "Data/Bradycardia/EMR_Bradycardia",
+  "scenario_name": "bradycardia",
+  "tooltable_setting": [
+    {
+      "table_name": "medication_bradycardia",
+      "tool_setting": [
+        {
+          "tool_name": "12",
+          "available_spot": [],
+          "duplicate": 1,
+          "value1": [
+            "1",
+            "Atropine",
+            "1mg",
+            "inj."
+          ],
+          "value2": [
+            "2",
+            "IV bolus stat"
+          ]
+        },
+        {
+          "tool_name": "13",
+          "available_spot": [
+            44
+          ],
+          "duplicate": 1
+        },
+        {
+          "tool_name": "23",
+          "available_spot": [],
+          "duplicate": 1,
+          "value1": [
+            "Atropine",
+            "60ml"
+          ]
+        }
+      ]
+    },
+    {
+      "table_name": "iv_bolus",
+      "tool_setting": [
+        {
+          "tool_name": "27",
+          "available_spot": [],
+          "duplicate": 1
+        },
+        {
+          "tool_name": "7",
+          "available_spot": [
+            13,
+            14
+          ],
+          "duplicate": 1
+        },
+        {
+          "tool_name": "8",
+          "available_spot": [
+            11,
+            12
+          ],
+          "duplicate": 1
+        },
+        {
+          "tool_name": "9",
+          "available_spot": [
+            7,
+            8
+          ],
+          "duplicate": 1
+        },
+        {
+          "tool_name": "10",
+          "available_spot": [
+            9,
+            10
+          ],
+          "duplicate": 1
+        },
+        {
+          "tool_name": "29",
+          "available_spot": [
+            17
+          ],
+          "duplicate": 1
+        },
+        {
+          "tool_name": "28",
+          "available_spot": [
+            16
+          ],
+          "duplicate": 1
+        }
+      ]
+    }
+  ],
+  "stage": [
+    {
+      "id": "0",
+      "stage_event": {
+        "patient_data": {
+          "ecg_graph": "ecg_normal",
+          "pleth_graph": "pleth_normal",
+          "rr_graph": "rr_normal",
+          "hr_min": 80,
+          "hr_max": 90,
+          "rr_min": 20,
+          "rr_max": 20,
+          "bp_sp": 126,
+          "bp_dp": 78,
+          "spo2_min": 0.96,
+          "spo2_max": 0.96,
+          "bt": 37.6,
+          "bed_angle": "0",
+          "texture": "Normal",
+          "rhythm": "NormalSinusRhythm",
+          "breath_sound": "Coarse Crackles",
+          "heart_sound": "NormalHeartSound",
+          "bowel_sound": "NormalBowelSound"
+        },
+        "order": {
+          "add": [
+            {
+              "key": "Order.2.Add.3"
+            }
+          ]
+        }
+      },
+      "tool_settings": [
+        "medication_bradycardia"
+      ],
+      "skill_settings": [
+        "patient_talk",
+        "bracelet",
+        "medication",
+        "iv_bolus"
+      ],
+      "correct_skills": [
+        {
+          "skill": "medication",
+          "result": [
+            "atropine",
+            "iv_bolus"
+          ],
+          "total_progress": 0.5
+        },
+        {
+          "skill": "iv_bolus",
+          "result": [
+            "atropine",
+            "iv_bolus"
+          ],
+          "total_progress": 0.5
+        }
+      ],
+      "next_stage": "1"
+    },
+    {
+      "id": "1",
+      "stage_event": {
+        "patient_data": {
+          "breath_sound": "Fine Crackles"
+        },
+        "send_message": [
+          {
+            "function_name": "ShowCompleteUI"
+          }
+        ]
+      },
+      "tool_settings": [],
+      "skill_settings": [
+        "patient_talk",
+        "bracelet"
+      ],
+      "correct_skills": [],
+      "next_stage": ""
+    }
+  ]
+}
