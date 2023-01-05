@@ -1012,7 +1012,7 @@
                     "name": "",
                     "id": "62690862-4688-4010-975b-b3d9c6062157",
                     "path": "<XRController>{RightHand}/primary2DAxis",
-                    "interactions": "Sector(directions=1)",
+                    "interactions": "Sector(directions=1,sweepBehavior=3)",
                     "processors": "",
                     "groups": "Generic XR Controller",
                     "action": "Teleport Mode Activate",
