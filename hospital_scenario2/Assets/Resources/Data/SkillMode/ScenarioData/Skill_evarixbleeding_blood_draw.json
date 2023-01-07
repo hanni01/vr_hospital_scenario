@@ -1,0 +1,137 @@
+{
+  "localization_url": "1uFLVZ2IWFxpSN2xMXSS6hGpYfJ3x9r8IcQl9XhLKnEo",
+  "localization_sheets": [
+    "common",
+    "common_skill",
+    "scenario_evarixbleeding"
+  ],
+  "patient_talk_path": "Data/EVarixBleeding/TalkData_EVarixBleeding",
+  "emr": "Data/EVarixBleeding/EMR_EVarixBleeding",
+  "scenario_name": "evarixbleeding",
+  "tooltable_setting": [
+    {
+      "table_name": "blood_draw",
+      "tool_setting": [
+        {
+          "tool_name": "8",
+          "available_spot": [
+            113,
+            114
+          ],
+          "duplicate": 1
+        },
+        {
+          "tool_name": "7",
+          "available_spot": [
+            111,
+            112
+          ],
+          "duplicate": 1,
+          "value1": [
+            "60"
+          ]
+        },
+        {
+          "tool_name": "74",
+          "available_spot": [
+            61
+          ],
+          "duplicate": 2
+        },
+        {
+          "tool_name": "11",
+          "available_spot": [],
+          "duplicate": 1,
+          "value1": [
+            "7",
+            "Plain",
+            "혈액은행검사(Plain)"
+          ],
+          "value2": [
+            "10",
+            "Plain"
+          ]
+        },
+        {
+          "tool_name": "12",
+          "available_spot": [],
+          "duplicate": 1,
+          "value1": [
+            "7",
+            "EDTA",
+            "일반혈액검사(EDTA)"
+          ],
+          "value2": [
+            "9",
+            "EDTA"
+          ]
+        }
+      ]
+    }
+  ],
+  "stage": [
+    {
+      "id": "0",
+      "stage_event": {
+        "patient_data": {
+          "ecg_graph": "ecg_normal",
+          "pleth_graph": "pleth_normal",
+          "rr_graph": "rr_normal",
+          "hr_min": 105,
+          "hr_max": 105,
+          "rr_min": 20,
+          "rr_max": 20,
+          "bp_sp": 95,
+          "bp_dp": 80,
+          "spo2_min": 0.97,
+          "spo2_max": 0.97,
+          "bt": 36.8,
+          "face_animation": "idle",
+          "bode_animation": "idle",
+          "rhythm": "NormalSinusRhythm",
+          "breath_sound": "NormalBreathSound",
+          "heart_sound": "NormalHeartSound",
+          "bowel_sound": "NormalBowelSound"
+        },
+        "send_message": [
+          {
+            "function_name": "ChangeClothes"
+          }
+        ]
+      },
+      "tool_settings": [
+        "blood_draw"
+      ],
+      "skill_settings": [
+        "patient_talk",
+        "bracelet",
+        "blood_draw"
+      ],
+      "correct_skills": [
+        {
+          "skill": "vein_blood_sampling",
+          "result": [],
+          "total_progress": 1
+        }
+      ],
+      "next_stage": "1"
+    },
+    {
+      "id": "1",
+      "stage_event": {
+        "send_message": [
+          {
+            "function_name": "ShowCompleteUI"
+          }
+        ]
+      },
+      "tool_settings": [],
+      "skill_settings": [
+        "patient_talk",
+        "bracelet"
+      ],
+      "correct_skills": [],
+      "next_stage": ""
+    }
+  ]
+}

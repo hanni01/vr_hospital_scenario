@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb11f27a1e7f522429643fbff12b6653, type: 3}
+  m_Name: ecg_pacing
+  m_EditorClassIdentifier: 
+  data:
+  - position: 0
+    value: 25
+    random_position: 0
+    random_value: 0
+  - position: 9
+    value: 21.87
+    random_position: 0
+    random_value: 0
+  - position: 9.5
+    value: 10.52
+    random_position: 0
+    random_value: 2
+  - position: 11
+    value: 46.5
+    random_position: 0
+    random_value: 3
+  - position: 11.2
+    value: 33.8
+    random_position: 0
+    random_value: 0
+  - position: 15.81
+    value: 25
+    random_position: 0
+    random_value: 0
+  - position: 27.7
+    value: 14.4
+    random_position: 0
+    random_value: 2
+  - position: 41.6
+    value: 27.2
+    random_position: 0
+    random_value: 2
+  - position: 45.9
+    value: 45.4
+    random_position: 0
+    random_value: 2
+  - position: 71.4
+    value: 61.5
+    random_position: 0
+    random_value: 3
+  - position: 90.6
+    value: 31.4
+    random_position: 0
+    random_value: 0
+  - position: 100
+    value: 25
+    random_position: 0
+    random_value: 0
+  interval_time: 0.8
+  alert_position:
+  - 68.7
+  wave_count: 1
+  regular_random_value: 0

@@ -1,0 +1,204 @@
+{
+  "localization_url": "1uFLVZ2IWFxpSN2xMXSS6hGpYfJ3x9r8IcQl9XhLKnEo",
+  "localization_sheets": [
+    "common",
+    "common_skill",
+    "scenario_evarixbleeding"
+  ],
+  "patient_talk_path": "Data/EVarixBleeding/TalkData_EVarixBleeding",
+  "emr": "Data/EVarixBleeding/EMR_EVarixBleeding",
+  "scenario_name": "evarixbleeding",
+  "tooltable_setting": [
+    {
+      "table_name": "medication_ns100",
+      "tool_setting": [
+        {
+          "tool_name": "11",
+          "available_spot": [],
+          "duplicate": 1,
+          "value1": [
+            "6",
+            "NS",
+            "100mL",
+            "+ Cefotaxime 2g"
+          ],
+          "value2": [
+            "7",
+            "IV Mix"
+          ],
+          "value3": [
+            "Cefotaxime 2g + NS 100mL",
+            "10cc/hr",
+            "IVF"
+          ]
+        },
+        {
+          "tool_name": "8",
+          "available_spot": [
+            42
+          ],
+          "duplicate": 1
+        },
+        {
+          "tool_name": "14",
+          "available_spot": [
+            93
+          ],
+          "duplicate": 1,
+          "value1": [
+            "NS",
+            "100mL"
+          ]
+        },
+        {
+          "tool_name": "22",
+          "available_spot": [
+            41
+          ],
+          "duplicate": 1,
+          "value1": [
+            "120"
+          ]
+        },
+        {
+          "tool_name": "13",
+          "available_spot": [
+            46
+          ],
+          "duplicate": 1
+        },
+        {
+          "tool_name": "73",
+          "available_spot": [],
+          "duplicate": 0,
+          "value1": [
+            "Cefotaxime",
+            "2g"
+          ]
+        }
+      ]
+    },
+    {
+      "table_name": "iv_piggy_back",
+      "tool_setting": [
+        {
+          "tool_name": "8",
+          "available_spot": [
+            13
+          ],
+          "duplicate": 1
+        },
+        {
+          "tool_name": "70",
+          "available_spot": [
+            79
+          ],
+          "duplicate": 0
+        },
+        {
+          "tool_name": "60",
+          "available_spot": [
+            21
+          ],
+          "duplicate": 0,
+          "value1": [
+            "5ds",
+            "1000mL"
+          ]
+        }
+      ]
+    }
+  ],
+  "stage": [
+    {
+      "id": "0",
+      "stage_event": {
+        "patient_data": {
+          "ecg_graph": "ecg_normal",
+          "pleth_graph": "pleth_normal",
+          "rr_graph": "rr_normal",
+          "hr_min": 105,
+          "hr_max": 105,
+          "rr_min": 20,
+          "rr_max": 20,
+          "bp_sp": 95,
+          "bp_dp": 80,
+          "spo2_min": 0.97,
+          "spo2_max": 0.97,
+          "bt": 36.8,
+          "face_animation": "idle",
+          "bode_animation": "idle",
+          "rhythm": "Normal sinus rhythm",
+          "breath_sound": "NormalBreathSound",
+          "heart_sound": "NormalHeartSound",
+          "bowel_sound": "NormalBowelSound"
+        },
+        "order": {
+          "add": [
+            {
+              "key": "Order.3.Add.4"
+            },
+            {
+              "key": "Order.3.Add.5",
+              "alert": false
+            }
+          ]
+        },
+        "send_message": [
+          {
+            "function_name": "ChangeClothes",
+            "param": ""
+          },
+          {
+            "function_name": "SetCatheter",
+            "param": ""
+          }
+        ]
+      },
+      "tool_settings": [
+        "medication_ns100"
+      ],
+      "skill_settings": [
+        "patient_talk",
+        "bracelet",
+        "medication",
+        "piggy_back"
+      ],
+      "correct_skills": [
+        {
+          "skill": "medication",
+          "result": [
+            "mixed_cefotaxime_ns",
+            "iv_piggyback"
+          ],
+          "total_progress": 0.5
+        },
+        {
+          "skill": "iv_piggyback",
+          "result": [
+            "iv_piggyback"
+          ],
+          "total_progress": 0.5
+        }
+      ],
+      "next_stage": "1"
+    },
+    {
+      "id": "1",
+      "stage_event": {
+        "send_message": [
+          {
+            "function_name": "ShowCompleteUI"
+          }
+        ]
+      },
+      "tool_settings": [],
+      "skill_settings": [
+        "patient_talk",
+        "bracelet"
+      ],
+      "correct_skills": [],
+      "next_stage": ""
+    }
+  ]
+}

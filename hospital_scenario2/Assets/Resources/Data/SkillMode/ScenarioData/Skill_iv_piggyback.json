@@ -1,0 +1,175 @@
+{
+  "localization_url": "1uFLVZ2IWFxpSN2xMXSS6hGpYfJ3x9r8IcQl9XhLKnEo",
+  "localization_sheets": [
+    "common",
+    "common_skill",
+    "scenario_antepartumcare"
+  ],
+  "patient_talk_path": "Data/AntepartumCare/TalkData_AntepartumCare",
+  "emr": "Data/AntepartumCare/EMR_AntepartumCare",
+  "patient_model": "Patient/Patient_NormalDelivery",
+  "map": "Map_DeliveryRoom",
+  "tooltable_setting": [
+    {
+      "table_name": "iv_piggyback",
+      "tool_setting": [
+        {
+          "tool_name": "7",
+          "available_spot": [
+            13,
+            14
+          ],
+          "duplicate": 1
+        },
+        {
+          "tool_name": "8",
+          "available_spot": [
+            13
+          ],
+          "duplicate": 1
+        },
+        {
+          "tool_name": "9",
+          "available_spot": [
+            7,
+            8
+          ],
+          "duplicate": 1
+        },
+        {
+          "tool_name": "10",
+          "available_spot": [
+            9
+          ],
+          "duplicate": 1
+        },
+        {
+          "tool_name": "70",
+          "available_spot": [
+            79
+          ],
+          "duplicate": 1
+        },
+        {
+          "tool_name": "60",
+          "available_spot": [
+            21
+          ],
+          "duplicate": 0,
+          "value1": [
+            "5ds",
+            "1000mL"
+          ],
+          "value3": [
+            "5% DS",
+            "1L",
+            "60cc/hr",
+            "IV"
+          ]
+        },
+        {
+          "tool_name": "61",
+          "available_spot": [
+            93
+          ],
+          "duplicate": 0,
+          "value1": [
+            "4",
+            "NS",
+            "500mL",
+            "1Bag + Oxytocin 5IU"
+          ],
+          "value2": [
+            "7",
+            "IV Mix. 60cc/hr"
+          ],
+          "value3": [
+            "Oxytocin (NS 500cc mix)",
+            "5IU(60cc/hr)",
+            "IV"
+          ]
+        }
+      ]
+    }
+  ],
+  "scenario_name": "antepartumcare",
+  "stage": [
+    {
+      "id": "0",
+      "stage_event": {
+        "patient_data": {
+          "ecg_graph": "ecg_normal",
+          "pleth_graph": "pleth_normal",
+          "rr_graph": "rr_normal",
+          "hr_min": 80,
+          "hr_max": 90,
+          "rr_min": 16,
+          "rr_max": 16,
+          "bp_sp": 130,
+          "bp_dp": 80,
+          "spo2_min": 0.98,
+          "spo2_max": 0.98,
+          "bt": 36.8,
+          "uc_graph_normal": "fetal_toco_normal",
+          "uc_graph_value": "fetal_toco_value",
+          "uc_frequency": "280",
+          "uc_time": "30",
+          "uc_min": "40",
+          "uc_max": "50",
+          "fhr_graph_normal": "fetal_us_normal",
+          "fhr_graph_value": "fetal_us_value",
+          "fhr_base": "120",
+          "fhr_heightmax": "240",
+          "fhr_min": "6",
+          "fhr_max": "25",
+          "uterine_dilatation_effacement": "3cm / 60%",
+          "fetal_state": "roa",
+          "face_animation": "idle",
+          "bode_animation": "idle",
+          "rhythm": "Normal sinus rhythm",
+          "breath_sound": "NormalBreathSound",
+          "heart_sound": "NormalHeartSound",
+          "bowel_sound": "NormalBowelSound"
+        }
+      },
+      "tool_settings": [
+        "iv_piggyback"
+      ],
+      "skill_settings": [
+        "patient_talk",
+        "bracelet",
+        "iv_piggyback"
+      ],
+      "correct_skills": [
+        {
+          "skill": "iv_piggyback",
+          "result": [
+            "iv_piggyback"
+          ],
+          "total_progress": 1
+        }
+      ],
+      "next_stage": "1"
+    },
+    {
+      "id": "1",
+      "stage_event": {
+        "patient_data": {
+          "breath_sound": "Fine Crackles"
+        },
+        "send_message": [
+          {
+            "function_name": "ShowCompleteUI"
+          }
+        ]
+      },
+      "tool_settings": [],
+      "skill_settings": [
+        "patient_talk",
+        "bracelet"
+      ],
+      "correct_skills": [],
+      "next_stage": ""
+    }
+  ]
+}

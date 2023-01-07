@@ -1,0 +1,935 @@
+{
+  "localization_url": "1uFLVZ2IWFxpSN2xMXSS6hGpYfJ3x9r8IcQl9XhLKnEo",
+  "localization_sheets": [
+    "common",
+    "common_skill",
+    "scenario_bradycardia"
+  ],
+  "patient_talk_path": "Data/Bradycardia/TalkData_Bradycardia",
+  "tooltable_setting": [
+    {
+      "table_name": "vital_sign",
+      "tool_setting": [
+        {
+          "tool_name": 0,
+          "available_spot": [
+            0,
+            1,
+            2
+          ],
+          "duplicate": 0,
+          "value1": [
+            "0"
+          ]
+        },
+        {
+          "tool_name": 1,
+          "available_spot": [
+            0,
+            1,
+            2
+          ],
+          "duplicate": 0,
+          "value1": [
+            "1"
+          ]
+        },
+        {
+          "tool_name": 2,
+          "available_spot": [
+            0,
+            1,
+            2
+          ],
+          "duplicate": 0,
+          "value1": [
+            "2"
+          ]
+        },
+        {
+          "tool_name": 3,
+          "available_spot": [
+            3,
+            4
+          ],
+          "duplicate": 0
+        },
+        {
+          "tool_name": 4,
+          "available_spot": [
+            5,
+            6
+          ],
+          "duplicate": 0
+        },
+        {
+          "tool_name": 5,
+          "available_spot": [
+            23,
+            24
+          ],
+          "duplicate": 0
+        }
+      ]
+    },
+    {
+      "table_name": "examination",
+      "tool_setting": [
+        {
+          "tool_name": 6,
+          "available_spot": [
+            26,
+            27,
+            28,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40
+          ],
+          "duplicate": 0
+        }
+      ]
+    },
+    {
+      "table_name": "medication_bradycardia",
+      "tool_setting": [
+        {
+          "tool_name": 11,
+          "duplicate": 1,
+          "value1": [
+            "3",
+            "Nitroglycerine",
+            "0.6mg",
+            "1T"
+          ],
+          "value2": [
+            "6",
+            "Sublingua"
+          ]
+        },
+        {
+          "tool_name": 12,
+          "duplicate": 1,
+          "value1": [
+            "1",
+            "Atropine",
+            "1mg",
+            "inj."
+          ],
+          "value2": [
+            "2",
+            "IV bolus stat"
+          ]
+        },
+        {
+          "tool_name": 13,
+          "available_spot": [
+            44
+          ],
+          "duplicate": 1
+        },
+        {
+          "tool_name": 23,
+          "duplicate": 1,
+          "value1": [
+            "Atropine",
+            "60ml"
+          ]
+        },
+        {
+          "tool_name": 24,
+          "duplicate": 1,
+          "value1": [
+            "Nitroglycerine",
+            "0.6mg"
+          ]
+        }
+      ]
+    },
+    {
+      "table_name": "iv_bolus",
+      "tool_setting": [
+        {
+          "tool_name": 27,
+          "duplicate": 1
+        },
+        {
+          "tool_name": 7,
+          "available_spot": [
+            13,
+            14
+          ],
+          "duplicate": 1
+        },
+        {
+          "tool_name": 8,
+          "available_spot": [
+            11,
+            12
+          ],
+          "duplicate": 1
+        },
+        {
+          "tool_name": 9,
+          "available_spot": [
+            7,
+            8
+          ],
+          "duplicate": 1
+        },
+        {
+          "tool_name": 10,
+          "available_spot": [
+            9,
+            10
+          ],
+          "duplicate": 1
+        },
+        {
+          "tool_name": 29,
+          "available_spot": [
+            17
+          ],
+          "duplicate": 1
+        },
+        {
+          "tool_name": 28,
+          "available_spot": [
+            16
+          ],
+          "duplicate": 1
+        }
+      ]
+    },
+    {
+      "table_name": "po",
+      "tool_setting": [
+        {
+          "tool_name": 45,
+          "available_spot": [
+            61
+          ],
+          "duplicate": 2
+        },
+        {
+          "tool_name": 46,
+          "available_spot": [
+            22
+          ],
+          "duplicate": 1
+        },
+        {
+          "tool_name": 47,
+          "duplicate": 2
+        }
+      ]
+    },
+    {
+      "table_name": "oxygenation",
+      "tool_setting": [
+        {
+          "tool_name": 34,
+          "duplicate": 2
+        },
+        {
+          "tool_name": 35,
+          "duplicate": 1
+        },
+        {
+          "tool_name": 37,
+          "available_spot": [
+            57
+          ],
+          "duplicate": 1
+        },
+        {
+          "tool_name": 36,
+          "duplicate": 1,
+          "value1": [
+            "2",
+            "0",
+            "2"
+          ]
+        },
+        {
+          "tool_name": 38,
+          "available_spot": [
+            44
+          ],
+          "duplicate": 0,
+          "value1": [
+            "3",
+            "0.3"
+          ]
+        },
+        {
+          "tool_name": 48,
+          "available_spot": [
+            48
+          ],
+          "duplicate": 1,
+          "value1": [
+            "3",
+            "0.1"
+          ]
+        }
+      ]
+    },
+    {
+      "table_name": "defibrillator",
+      "tool_setting": [
+        {
+          "tool_name": 39,
+          "duplicate": 0,
+          "value1": [
+            "demand",
+            "60",
+            "30"
+          ]
+        },
+        {
+          "tool_name": 42,
+          "available_spot": [
+            64
+          ],
+          "duplicate": 0
+        },
+        {
+          "tool_name": 43,
+          "available_spot": [
+            66
+          ],
+          "duplicate": 0
+        },
+        {
+          "tool_name": 44,
+          "available_spot": [
+            68
+          ],
+          "duplicate": 0
+        },
+        {
+          "tool_name": 40,
+          "available_spot": [
+            59
+          ],
+          "duplicate": 1
+        },
+        {
+          "tool_name": 49,
+          "available_spot": [
+            58
+          ],
+          "duplicate": 1
+        }
+      ]
+    }
+  ],
+  "emr": "Data/Bradycardia/EMR_Bradycardia",
+  "scenario_name": "Bradycardia",
+  "star_range": [
+    0,
+    40,
+    70,
+    100
+  ],
+  "stage": [
+    {
+      "id": "0",
+      "stage_event": {
+        "ecg_graph": "ecg_normal",
+        "pleth_graph": "pleth_normal",
+        "rr_graph": "rr_normal",
+        "hr_min": 60.0,
+        "hr_max": 80.0,
+        "rr_min": 18.0,
+        "rr_max": 18.0,
+        "bp_sp": 126.0,
+        "bp_dp": 78.0,
+        "spo2_min": 0.98,
+        "spo2_max": 1.0,
+        "bt": 36.7,
+        "face_animation": "idle",
+        "bode_animation": "idle",
+        "rhythm": "Normal sinus rhythm",
+        "breath_sound": "NormalBreathSound",
+        "heart_sound": "NormalHeartSound",
+        "bowel_sound": "NormalBowelSound"
+      },
+      "skill_settings": [
+        "patient_talk",
+        "bracelet"
+      ],
+      "correct_skills": [
+        {
+          "skill": "patient_talk",
+          "result": [
+            "identification.1"
+          ],
+          "total_progress": 0.038
+        },
+        {
+          "skill": "patient_talk",
+          "result": [
+            "identification.2"
+          ],
+          "total_progress": 0.038
+        },
+        {
+          "skill": "bracelet",
+          "total_progress": 0.038
+        }
+      ],
+      "next_stage": "1",
+      "additional_event": {
+        "time_event": [
+          {
+            "type": "loop",
+            "time": 60,
+            "send_message": {
+              "function_name": "UnActionHelp",
+              "param": []
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "1",
+      "tool_settings": [
+        "vital_sign",
+        "examination",
+        "medication_bradycardia"
+      ],
+      "skill_settings": [
+        "patient_talk",
+        "bracelet",
+        "vital_sign",
+        "bp_check",
+        "examination",
+        "medication",
+        "po"
+      ],
+      "correct_skills": [
+        {
+          "skill": "vital_sign",
+          "result": [
+            "spo2_sensor"
+          ],
+          "total_progress": 0.077
+        },
+        {
+          "skill": "bp_check",
+          "total_progress": 0.077
+        },
+        {
+          "skill": "vital_sign",
+          "result": [
+            "tympanic_temperature"
+          ],
+          "total_progress": 0.077
+        }
+      ],
+      "next_stage": "2",
+      "additional_event": {
+        "time_event": [
+          {
+            "type": "loop",
+            "time": 60,
+            "send_message": {
+              "function_name": "UnActionHelp"
+            }
+          }
+        ],
+        "after_skill_event": [
+          {
+            "target_skill": [
+              {
+                "skill": "po",
+                "result": [
+                  "nitroglycerine",
+                  "po"
+                ]
+              }
+            ],
+            "send_message": {
+              "function_name": "SetStage",
+              "param": "7-2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "2",
+      "stage_event": {
+        "ecg_graph": "ecg_bradycardia",
+        "pleth_graph": "pleth_bradycardia",
+        "hr_min": 30.0,
+        "hr_max": 40.0,
+        "rr_min": 24.0,
+        "rr_max": 24.0,
+        "bp_sp": 85.0,
+        "bp_dp": 82.0,
+        "spo2_min": 0.98,
+        "spo2_max": 1.0,
+        "face_animation": "breath_hard",
+        "body_animation": "breath_hard",
+        "rhythm": "2' AV block"
+      },
+      "tool_settings": [
+        "vital_sign",
+        "examination",
+        "medication_bradycardia"
+      ],
+      "skill_settings": [
+        "order",
+        "patient_talk",
+        "bracelet",
+        "vital_sign",
+        "bp_check",
+        "examination",
+        "medication",
+        "po"
+      ],
+      "correct_skills": [
+        {
+          "skill": "doctor_call",
+          "result": [
+            "0",
+            "1:2",
+            "3:4",
+            "5"
+          ],
+          "total_progress": 0.077
+        }
+      ],
+      "next_stage": "3",
+      "additional_event": {
+        "time_event": [
+          {
+            "type": "once",
+            "time": 60,
+            "send_message": {
+              "function_name": "UnActionHelp",
+              "param": []
+            }
+          }
+        ],
+        "after_skill_event": [
+          {
+            "target_skill": [
+              {
+                "skill": "po",
+                "result": [
+                  "nitroglycerine",
+                  "po"
+                ],
+                "total_progress": 0.0
+              }
+            ],
+            "send_message": {
+              "function_name": "SetStage",
+              "param": [
+                "7-2"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "3",
+      "stage_event": {
+        "add": [
+          "Order.2.Add.1",
+          "Order.3.Add.1"
+        ]
+      },
+      "tool_settings": [
+        "vital_sign",
+        "examination",
+        "medication_bradycardia"
+      ],
+      "skill_settings": [
+        "emr.treatment.firstaid.7",
+        "patient_talk",
+        "bracelet",
+        "vital_sign",
+        "bp_check",
+        "examination",
+        "medication",
+        "po",
+        "iv_bolus"
+      ],
+      "correct_skills": [
+        {
+          "skill": "iv_bolus",
+          "result": [
+            "atropine",
+            "iv_bolus"
+          ],
+          "total_progress": 0.116
+        },
+        {
+          "skill": "emr.treatment.firstaid.7",
+          "total_progress": 0.077
+        }
+      ],
+      "next_stage": "4",
+      "additional_event": {
+        "time_event": [
+          {
+            "type": "once",
+            "time": 60,
+            "send_message": {
+              "function_name": "UnActionHelp",
+              "param": []
+            }
+          },
+          {
+            "type": "once",
+            "time": 60,
+            "send_message": {
+              "function_name": "SetPatientData",
+              "param": [
+                {
+                  "rr_min": 30.0,
+                  "rr_max": 30.0,
+                  "bp_sp": 85.0,
+                  "bp_dp": 55.0,
+                  "spo2_min": 0.92,
+                  "spo2_max": 0.94
+                }
+              ]
+            }
+          }
+        ],
+        "after_skill_event": [
+          {
+            "target_skill": [
+              {
+                "skill": "po",
+                "result": [
+                  "nitroglycerine",
+                  "po"
+                ],
+                "total_progress": 0.0
+              }
+            ],
+            "send_message": {
+              "function_name": "SetStage",
+              "param": [
+                "7-2"
+              ]
+            }
+          },
+          {
+            "target_skill": [
+              {
+                "skill": "iv_bolus",
+                "result": [
+                  "atropine",
+                  "iv_bolus"
+                ],
+                "total_progress": 0.0
+              }
+            ],
+            "send_message": {
+              "function_name": "ShowNoChangeMessage",
+              "param": []
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "4",
+      "tool_settings": [
+        "vital_sign",
+        "examination",
+        "medication_bradycardia"
+      ],
+      "skill_settings": [
+        "order",
+        "patient_talk",
+        "bracelet",
+        "vital_sign",
+        "bp_check",
+        "examination",
+        "medication",
+        "po",
+        "iv_bolus"
+      ],
+      "correct_skills": [
+        {
+          "skill": "doctor_call",
+          "result": [
+            "6",
+            "7",
+            "8",
+            "9"
+          ],
+          "total_progress": 0.077
+        }
+      ],
+      "next_stage": "5",
+      "additional_event": {
+        "time_event": [
+          {
+            "type": "once",
+            "time": 60,
+            "send_message": {
+              "function_name": "UnActionHelp"
+            }
+          }
+        ],
+        "after_skill_event": [
+          {
+            "target_skill": [
+              {
+                "skill": "po",
+                "result": [
+                  "nitroglycerine",
+                  "po"
+                ]
+              }
+            ],
+            "send_message": {
+              "function_name": "SetStage",
+              "param": "7-2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "5",
+      "stage_event": {
+        "add": [
+          "Order.2.Add.2",
+          "Order.2.Add.3"
+        ]
+      },
+      "tool_settings": [
+        "vital_sign",
+        "examination",
+        "medication_bradycardia",
+        "oxygenation",
+        "defibrillator"
+      ],
+      "skill_settings": [
+        "patient_talk",
+        "bracelet",
+        "vital_sign",
+        "bp_check",
+        "examination",
+        "medication",
+        "po",
+        "iv_bolus",
+        "oxygen",
+        "defibrillator"
+      ],
+      "correct_skills": [
+        {
+          "skill": "oxygen",
+          "result": [
+            "nasal_cannula"
+          ],
+          "total_progress": 0.115
+        },
+        {
+          "skill": "defibrillator",
+          "result": [
+            "tcp",
+            "demand",
+            "60",
+            "30"
+          ],
+          "total_progress": 0.116
+        }
+      ],
+      "next_stage": "6",
+      "additional_event": {
+        "time_event": [
+          {
+            "type": "loop",
+            "time": 60,
+            "send_message": {
+              "function_name": "UnActionHelp",
+              "param": []
+            }
+          }
+        ],
+        "after_skill_event": [
+          {
+            "target_skill": [
+              {
+                "skill": "po",
+                "result": [
+                  "nitroglycerine",
+                  "po"
+                ],
+                "total_progress": 0.0
+              }
+            ],
+            "send_message": {
+              "function_name": "SetStage",
+              "param": [
+                "7-2"
+              ]
+            }
+          },
+          {
+            "target_skill": [
+              {
+                "skill": "oxygen",
+                "result": [
+                  "nasal_cannula"
+                ],
+                "total_progress": 0.0
+              }
+            ],
+            "send_message": {
+              "function_name": "SetPatientData",
+              "param": [
+                {
+                  "spo2_min": 1.0,
+                  "spo2_max": 1.0
+                }
+              ]
+            }
+          },
+          {
+            "target_skill": [
+              {
+                "skill": "defibrillator",
+                "result": [
+                  "tcp"
+                ],
+                "total_progress": 0.0
+              }
+            ],
+            "send_message": {
+              "function_name": "SetPatientData",
+              "param": [
+                {
+                  "ecg_graph": "ecg_pacing",
+                  "pleth_graph": "pleth_pacing",
+                  "hr_min": 60.0,
+                  "hr_max": 60.0,
+                  "bp_sp": 95.0,
+                  "bp_dp": 65.0,
+                  "rhythm": "Pacing beat"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "6",
+      "stage_event": {
+        "add": "Order.2.Add.4",
+        "send_message": {
+          "function_name": "ActiveDocter"
+        }
+      },
+      "tool_settings": [
+        "vital_sign",
+        "examination",
+        "medication_bradycardia",
+        "oxygenation",
+        "defibrillator"
+      ],
+      "skill_settings": [
+        "emr.treatment.firstaid.7",
+        "patient_talk",
+        "bracelet",
+        "vital_sign",
+        "bp_check",
+        "examination",
+        "medication",
+        "po",
+        "iv_bolus",
+        "oxygen",
+        "defibrillator"
+      ],
+      "correct_skills": [
+        {
+          "skill": "emr.treatment.firstaid.7",
+          "total_progress": 0.077
+        }
+      ],
+      "next_stage": "7-1",
+      "additional_event": {
+        "time_event": [
+          {
+            "type": "once",
+            "time": 60,
+            "send_message": {
+              "function_name": "UnActionHelp",
+              "param": []
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "7-1",
+      "stage_event": {
+        "hr_min": 60.0,
+        "hr_max": 60.0,
+        "rr_min": 20.0,
+        "rr_max": 20.0,
+        "bp_sp": 112.0,
+        "bp_dp": 66.0,
+        "spo2_min": 0.98,
+        "spo2_max": 1.0,
+        "bt": 36.7,
+        "face_animation": "idle",
+        "body_animation": "idle",
+        "send_message": {
+          "function_name": "stage.7-1.plog"
+        }
+      },
+      "tool_settings": [
+        "examination"
+      ],
+      "skill_settings": [
+        "patient_talk",
+        "examination"
+      ],
+      "next_stage": ""
+    },
+    {
+      "id": "7-2",
+      "stage_event": {
+        "ecg_graph": "ecg_bradycardia",
+        "pleth_graph": "pleth_bradycardia",
+        "hr_min": 20.0,
+        "hr_max": 30.0,
+        "rr_min": 8.0,
+        "rr_max": 8.0,
+        "bp_sp": 82.0,
+        "bp_dp": 55.0,
+        "spo2_min": 0.77,
+        "spo2_max": 0.77,
+        "send_message": {
+          "function_name": "stage.7-2.plog"
+        }
+      },
+      "tool_settings": [
+        "examination"
+      ],
+      "next_stage": ""
+    }
+  ]
+}

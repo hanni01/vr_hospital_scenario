@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb11f27a1e7f522429643fbff12b6653, type: 3}
+  m_Name: ecg_shock
+  m_EditorClassIdentifier: 
+  data:
+  - position: 0
+    value: 25
+    random_position: 0
+    random_value: 0
+  - position: 7.9
+    value: 32.4
+    random_position: 0
+    random_value: 0
+  - position: 15.4
+    value: 37.9
+    random_position: 0
+    random_value: 0
+  - position: 17.9
+    value: 83.3
+    random_position: 0
+    random_value: 0
+  - position: 22.6
+    value: 98.5
+    random_position: 0
+    random_value: 0
+  - position: 34
+    value: 97.6
+    random_position: 0
+    random_value: 0
+  - position: 35.5
+    value: 73.9
+    random_position: 0
+    random_value: 0
+  - position: 37.4
+    value: 13.3
+    random_position: 0
+    random_value: 0
+  - position: 48.6
+    value: 0.7
+    random_position: 0
+    random_value: 0
+  - position: 77.3
+    value: 0.7
+    random_position: 0
+    random_value: 0
+  - position: 86.92
+    value: 4.31
+    random_position: 0
+    random_value: 0
+  - position: 90
+    value: 14.3
+    random_position: 0
+    random_value: 0
+  - position: 95
+    value: 25
+    random_position: 0
+    random_value: 0
+  - position: 100
+    value: 25
+    random_position: 0
+    random_value: 0
+  interval_time: 0.6
+  alert_position:
+  - 22.6
+  wave_count: 1
+  regular_random_value: 0

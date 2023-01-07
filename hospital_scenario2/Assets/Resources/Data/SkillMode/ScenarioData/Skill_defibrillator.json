@@ -1,0 +1,222 @@
+{
+  "localization_url": "1uFLVZ2IWFxpSN2xMXSS6hGpYfJ3x9r8IcQl9XhLKnEo",
+  "localization_sheets": [
+    "common",
+    "common_skill",
+    "scenario_bradycardia"
+  ],
+  "patient_talk_path": "Data/Bradycardia/TalkData_Bradycardia",
+  "emr": "Data/Bradycardia/EMR_Bradycardia",
+  "scenario_name": "bradycardia",
+  "tooltable_setting": [
+    {
+      "table_name": "defibrillator",
+      "tool_setting": [
+        {
+          "tool_name": "39",
+          "available_spot": [],
+          "duplicate": 0,
+          "value1": [
+            "demand",
+            "60",
+            "30"
+          ]
+        },
+        {
+          "tool_name": "42",
+          "available_spot": [
+            64
+          ],
+          "duplicate": 0
+        },
+        {
+          "tool_name": "43",
+          "available_spot": [
+            66
+          ],
+          "duplicate": 0
+        },
+        {
+          "tool_name": "44",
+          "available_spot": [
+            68
+          ],
+          "duplicate": 0
+        },
+        {
+          "tool_name": "40",
+          "available_spot": [
+            58,
+            59
+          ],
+          "duplicate": 1
+        },
+        {
+          "tool_name": "49",
+          "available_spot": [
+            58,
+            59
+          ],
+          "duplicate": 1
+        },
+        {
+          "tool_name": "50",
+          "available_spot": [],
+          "duplicate": 0
+        },
+        {
+          "tool_name": "51",
+          "available_spot": [],
+          "duplicate": 0
+        },
+        {
+          "tool_name": "52",
+          "available_spot": [
+            69,
+            70
+          ],
+          "duplicate": 0
+        },
+        {
+          "tool_name": "53",
+          "available_spot": [],
+          "duplicate": 0,
+          "value1": [
+            "150",
+            "200"
+          ]
+        }
+      ]
+    }
+  ],
+  "stage": [
+    {
+      "id": "0",
+      "stage_event": {
+        "patient_data": {
+          "ecg_graph": "ecg_bradycardia",
+          "pleth_graph": "pleth_bradycardia",
+          "rr_graph": "rr_normal",
+          "hr_min": 30,
+          "hr_max": 40,
+          "rr_min": 24,
+          "rr_max": 24,
+          "bp_sp": 82,
+          "bp_dp": 85,
+          "spo2_min": 0.98,
+          "spo2_max": 1,
+          "bt": 36.7,
+          "texture": "Pale",
+          "bed_angle": "0",
+          "rhythm": "2' AV block",
+          "breath_sound": "NormalBreathSound",
+          "bowel_sound": "NormalBowelSound",
+          "heart_sound": "SlowHeartSound"
+        },
+        "order": {
+          "add": [
+            {
+              "key": "Order.2.Add.3"
+            }
+          ]
+        },
+        "send_message": [
+          {
+            "function_name": "SetDefibrillator"
+          }
+        ]
+      },
+      "tool_settings": [
+        "defibrillator"
+      ],
+      "skill_settings": [
+        "patient_talk",
+        "bracelet"
+      ],
+      "correct_skills": [
+        {
+          "skill": "defibrillator",
+          "result": [],
+          "total_progress": 1
+        }
+      ],
+      "next_stage": "1",
+      "additional_event": {
+        "after_skill_event": [
+          {
+            "target_skill": [
+              {
+                "skill": "defibrillator",
+                "result": [
+                  "tcp"
+                ]
+              }
+            ],
+            "send_message": {
+              "function_name": "SetPatientData",
+              "param": {
+                "ecg_graph": "ecg_pacing",
+                "pleth_graph": "pleth_pacing",
+                "hr_min": 60,
+                "hr_max": 60,
+                "rr_min": 20,
+                "rr_max": 20,
+                "bp_sp": 112,
+                "bp_dp": 66,
+                "spo2_min": 0.98,
+                "spo2_max": 1,
+                "rhythm": "Pacing beat",
+                "heart_sound": "NormalHeartSound"
+              }
+            }
+          },
+          {
+            "target_skill": [
+              {
+                "skill": "defibrillator",
+                "result": [
+                  "shock"
+                ]
+              }
+            ],
+            "send_message": {
+              "function_name": "SetPatientData",
+              "param": {
+                "ecg_graph": "ecg_normal",
+                "hr_min": 60,
+                "hr_max": 80,
+                "rr_min": 18,
+                "rr_max": 18,
+                "bp_sp": 126,
+                "bp_dp": 78,
+                "spo2_min": 0.98,
+                "spo2_max": 1,
+                "rhythm": "NormalSinusRhythm",
+                "heart_sound": "NormalHeartSound"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "1",
+      "stage_event": {
+        "send_message": [
+          {
+            "function_name": "ShowCompleteUI"
+          }
+        ]
+      },
+      "tool_settings": [
+        "defibrillator"
+      ],
+      "skill_settings": [
+        "patient_talk",
+        "examination"
+      ],
+      "correct_skills": [],
+      "next_stage": ""
+    }
+  ]
+}

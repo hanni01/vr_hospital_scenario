@@ -1,0 +1,100 @@
+{
+  "localization_url": "1uFLVZ2IWFxpSN2xMXSS6hGpYfJ3x9r8IcQl9XhLKnEo",
+  "localization_sheets": [
+    "common",
+    "common_skill",
+    "scenario_antepartumcare"
+  ],
+  "patient_talk_path": "Data/AntepartumCare/TalkData_AntepartumCare",
+  "emr": "Data/AntepartumCare/EMR_AntepartumCare",
+  "patient_model": "Patient/Patient_NormalDelivery",
+  "map": "Map_DeliveryRoom",
+  "scenario_name": "antepartumcare",
+  "star_range": [
+    0,
+    40,
+    70,
+    100
+  ],
+  "tooltable_setting": [],
+  "interaction_setting": [
+    {
+      "interaction_name": "leopold_maneuver"
+    }
+  ],
+  "stage": [
+    {
+      "id": "0",
+      "stage_event": {
+        "patient_data": {
+          "ecg_graph": "ecg_normal",
+          "pleth_graph": "pleth_normal",
+          "rr_graph": "rr_normal",
+          "hr_min": 90,
+          "hr_max": 100,
+          "rr_min": 22,
+          "rr_max": 22,
+          "bp_sp": 128,
+          "bp_dp": 85,
+          "spo2_min": 0.97,
+          "spo2_max": 0.97,
+          "bt": 36.8,
+          "uc_graph_normal": "fetal_toco_normal",
+          "uc_graph_value": "fetal_toco_value",
+          "uc_frequency": "280",
+          "uc_time": "30",
+          "uc_min": "40",
+          "uc_max": "50",
+          "fhr_graph_normal": "fetal_us_normal",
+          "fhr_graph_value": "fetal_us_value",
+          "fhr_base": "120",
+          "fhr_heightmax": "240",
+          "fhr_min": "6",
+          "fhr_max": "25",
+          "uterine_dilatation_effacement": "3cm / 60%",
+          "fetal_state": "roa",
+          "face_animation": "idle",
+          "bode_animation": "idle",
+          "rhythm": "Normal sinus rhythm",
+          "breath_sound": "NormalBreathSound",
+          "heart_sound": "NormalHeartSound",
+          "bowel_sound": "NormalBowelSound"
+        }
+      },
+      "tool_settings": [],
+      "skill_settings": [
+        "patient_talk",
+        "bracelet",
+        "leopold_maneuver"
+      ],
+      "interaction_skill_settings": [
+        "leopold_maneuver"
+      ],
+      "correct_skills": [
+        {
+          "skill": "leopold_maneuver",
+          "result": [],
+          "total_progress": 1
+        }
+      ],
+      "next_stage": "1"
+    },
+    {
+      "id": "1",
+      "stage_event": {
+        "send_message": [
+          {
+            "function_name": "ShowCompleteUI"
+          }
+        ]
+      },
+      "tool_settings": [],
+      "skill_settings": [
+        "patient_talk",
+        "bracelet"
+      ],
+      "correct_skills": [],
+      "next_stage": ""
+    }
+  ]
+}

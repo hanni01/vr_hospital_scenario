@@ -1,0 +1,538 @@
+{
+  "profile_path": "Data/Bradycardia/Bradycardia_thumbnail",
+  "patient_info": [
+    "Gender",
+    "Age",
+    "BDate",
+    "BloodType",
+    "Weight",
+    "Height",
+    "DiagnosisName",
+    "Department",
+    "Fall",
+    "Bedscore",
+    "Nutrition",
+    "Allergy",
+    "Doctor"
+  ],
+  "orders": [
+    "Order.0.Regular.2",
+    "Order.0.Regular.3",
+    "Order.0.Regular.4",
+    "Order.0.Regular.5",
+    "Order.0.Regular.6",
+    "Order.3.Regular.2",
+    "Order.3.PRN.2",
+    "Order.3.PRN.3",
+    "Order.4.Regular.1",
+    "Order.4.Regular.2"
+  ],
+  "orders_laboratory_test": [
+    {
+      "title": "Order.1.Regular.6",
+      "list": [
+        "Order.1.Regular.6.0"
+      ]
+    },
+    {
+      "title": "Order.1.Regular.7",
+      "list": [
+        "Order.1.Regular.7.0",
+        "Order.1.Regular.7.1"
+      ]
+    },
+    {
+      "title": "Order.1.Regular.8",
+      "list": [
+        "Order.1.Regular.8.0",
+        "Order.1.Regular.8.1",
+        "Order.1.Regular.8.2",
+        "Order.1.Regular.8.3",
+        "Order.1.Regular.8.4",
+        "Order.1.Regular.8.5",
+        "Order.1.Regular.8.6"
+      ]
+    },
+    {
+      "title": "Order.1.Regular.9",
+      "list": [
+        "Order.1.Regular.9.0",
+        "Order.1.Regular.9.1"
+      ]
+    },
+    {
+      "title": "Order.1.Regular.10",
+      "list": [
+        "Order.1.Regular.10.0"
+      ]
+    }
+  ],
+  "patient_notes": [
+    "PatientNotes.1",
+    "PatientNotes.2",
+    "PatientNotes.3",
+    "PatientNotes.4",
+    "PatientNotes.5",
+    "PatientNotes.6",
+    "PatientNotes.7",
+    "PatientNotes.8",
+    "PatientNotes.9"
+  ],
+  "patient_notes_hide": [
+    {
+      "type": "PatientNotes.4",
+      "list": [
+        {
+          "index": "0",
+          "talk_key": [
+            "medicalhx.1"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "PatientNotes.5",
+      "list": [
+        {
+          "index": "0",
+          "talk_key": [
+            "surgicalhx.1"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "PatientNotes.6",
+      "list": [
+        {
+          "index": "0",
+          "talk_key": [
+            "socialhx.1"
+          ]
+        },
+        {
+          "index": "1",
+          "talk_key": [
+            "socialhx.2"
+          ]
+        },
+        {
+          "index": "2",
+          "talk_key": [
+            "socialhx.3"
+          ]
+        },
+        {
+          "index": "3",
+          "talk_key": [
+            "socialhx.4"
+          ]
+        },
+        {
+          "index": "4",
+          "talk_key": [
+            "socialhx.5"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "PatientNotes.8",
+      "list": [
+        {
+          "index": "0",
+          "talk_key": [
+            "medication.1"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "PatientNotes.9",
+      "list": [
+        {
+          "index": "0",
+          "talk_key": [
+            "allergies.1"
+          ]
+        }
+      ]
+    }
+  ],
+  "lab_data": {
+    "edta": [
+      {
+        "data": [
+          "WBC",
+          "10.2",
+          "up",
+          "4.0 ~ 10.0",
+          "x1000/ml"
+        ]
+      },
+      {
+        "data": [
+          "Hb",
+          "14",
+          "",
+          "12.0 ~ 16.0",
+          "g/dl"
+        ]
+      },
+      {
+        "data": [
+          "Hct",
+          "40",
+          "",
+          "36 ~ 48",
+          "%"
+        ]
+      },
+      {
+        "data": [
+          "PLT",
+          "400",
+          "",
+          "130 ~ 400",
+          "x1000/ml"
+        ]
+      }
+    ],
+    "sst": [
+      {
+        "data": [
+          "CA",
+          "9",
+          "",
+          "8.8 ~ 10.5",
+          "mg/dL"
+        ]
+      },
+      {
+        "data": [
+          "BUN",
+          "10",
+          "",
+          "10 ~ 26",
+          "mg/dL"
+        ]
+      },
+      {
+        "data": [
+          "Creatinine",
+          "0.5",
+          "down",
+          "0.7 ~ 1.4",
+          "mg/dL"
+        ]
+      },
+      {
+        "data": [
+          "CHOL",
+          "200",
+          "",
+          "70 ~ 240",
+          "mg/dL"
+        ]
+      },
+      {
+        "data": [
+          "NA",
+          "144",
+          "",
+          "135 ~ 145",
+          "mmol/L"
+        ]
+      },
+      {
+        "data": [
+          "K",
+          "3.5",
+          "",
+          "3.5 ~ 5.5",
+          "mmol/L"
+        ]
+      },
+      {
+        "data": [
+          "CL",
+          "100",
+          "",
+          "98 ~ 110",
+          "mmol/L"
+        ]
+      }
+    ],
+    "sst2": [
+      {
+        "data": [
+          "CK-MB",
+          "1.2",
+          "",
+          "0.6 ~ 6.3",
+          "ng/ml"
+        ]
+      },
+      {
+        "data": [
+          "Trop-I정량",
+          "3.9",
+          "",
+          "0 ~ 11.6",
+          "pg/ml"
+        ]
+      }
+    ],
+    "citrate": [
+      {
+        "data": [
+          "PT-INR",
+          "1.12",
+          "",
+          "1.00 ~ 1.13",
+          "INR"
+        ]
+      },
+      {
+        "data": [
+          "PT-%",
+          "90",
+          "",
+          "80 ~ 100",
+          "%"
+        ]
+      },
+      {
+        "data": [
+          "PT-sec",
+          "12.8",
+          "",
+          "11.6 ~ 13.0",
+          "sec"
+        ]
+      },
+      {
+        "data": [
+          "APTT",
+          "23.5",
+          "",
+          "22.0 ~ 33.5",
+          "sec"
+        ]
+      },
+      {
+        "data": [
+          "Fibrinogen",
+          "167",
+          "",
+          "160 ~ 380",
+          "mg/dL"
+        ]
+      }
+    ],
+    "abga": [
+      {
+        "data": [
+          "pH",
+          "7.37",
+          "",
+          "7.36 ~ 7.41",
+          ""
+        ]
+      },
+      {
+        "data": [
+          "PaO2",
+          "90",
+          "",
+          "80 ~ 100",
+          "mmHg"
+        ]
+      },
+      {
+        "data": [
+          "PaCO2",
+          "28",
+          "",
+          "35 ~ 45",
+          "mmHg"
+        ]
+      },
+      {
+        "data": [
+          "HCO3-",
+          "23",
+          "",
+          "22 ~ 26",
+          "mEq/L"
+        ]
+      }
+    ],
+    "pacs_path": "Data/Bradycardia/EMR_Bradycardia_pacs",
+    "ekg_path": "Data/Bradycardia/EMR_bradycardia_ecg_normal"
+  },
+  "treatment_data": {
+    "diet": [
+      {
+        "skill_name": "npo",
+        "start_state": false,
+        "is_toggle": true,
+        "toggle_group": 0,
+        "active": true
+      },
+      {
+        "skill_name": "general_diet",
+        "start_state": true,
+        "is_toggle": true,
+        "toggle_group": 0,
+        "active": true
+      },
+      {
+        "skill_name": "light_diet",
+        "start_state": false,
+        "is_toggle": true,
+        "toggle_group": 0,
+        "active": true
+      },
+      {
+        "skill_name": "liquid_diet",
+        "start_state": false,
+        "is_toggle": true,
+        "toggle_group": 0,
+        "active": true
+      },
+      {
+        "skill_name": "low_sodium_diet",
+        "start_state": false,
+        "is_toggle": true,
+        "toggle_group": 0,
+        "active": true
+      },
+      {
+        "skill_name": "renal_diet",
+        "start_state": false,
+        "is_toggle": true,
+        "toggle_group": 0,
+        "active": true
+      },
+      {
+        "skill_name": "sterilization_diet",
+        "start_state": false,
+        "is_toggle": true,
+        "toggle_group": 0,
+        "active": true
+      },
+      {
+        "skill_name": "diabetic_diet",
+        "start_state": false,
+        "is_toggle": true,
+        "toggle_group": 0,
+        "active": true
+      },
+      {
+        "skill_name": "water_restriction",
+        "start_state": false,
+        "is_toggle": true,
+        "toggle_group": -1,
+        "active": true
+      }
+    ],
+    "isolation": [
+      {
+        "skill_name": "airborne_precautions",
+        "start_state": false,
+        "is_toggle": true,
+        "toggle_group": -1,
+        "active": true
+      },
+      {
+        "skill_name": "droplet_precautions",
+        "start_state": false,
+        "is_toggle": true,
+        "toggle_group": -1,
+        "active": true
+      },
+      {
+        "skill_name": "contact_precautions",
+        "start_state": false,
+        "is_toggle": true,
+        "toggle_group": -1,
+        "active": true
+      },
+      {
+        "skill_name": "protective_precautions",
+        "start_state": false,
+        "is_toggle": true,
+        "toggle_group": -1,
+        "active": true
+      }
+    ],
+    "invasive_procedure": [
+      {
+        "skill_name": "cic",
+        "start_state": false,
+        "is_toggle": false,
+        "toggle_group": -1,
+        "active": false
+      },
+      {
+        "skill_name": "foley_catheterization",
+        "start_state": false,
+        "is_toggle": false,
+        "toggle_group": -1,
+        "active": false
+      },
+      {
+        "skill_name": "arterial_line_insertion",
+        "start_state": false,
+        "is_toggle": false,
+        "toggle_group": -1,
+        "active": false
+      },
+      {
+        "skill_name": "picc_insertion",
+        "start_state": false,
+        "is_toggle": false,
+        "toggle_group": -1,
+        "active": false
+      },
+      {
+        "skill_name": "cental_line_insertion",
+        "start_state": false,
+        "is_toggle": false,
+        "toggle_group": -1,
+        "active": false
+      },
+      {
+        "skill_name": "chest_tube_insetion",
+        "start_state": false,
+        "is_toggle": false,
+        "toggle_group": -1,
+        "active": false
+      },
+      {
+        "skill_name": "intubation",
+        "start_state": false,
+        "is_toggle": false,
+        "toggle_group": -1,
+        "active": false
+      },
+      {
+        "skill_name": "levin_tube_insertion",
+        "start_state": false,
+        "is_toggle": false,
+        "toggle_group": -1,
+        "active": false
+      }
+    ],
+    "additional_tests": [
+      {
+        "skill_name": "x_ray",
+        "start_state": false,
+        "is_toggle": false,
+        "toggle_group": -1,
+        "active": false
+      }
+    ]
+  }
+}

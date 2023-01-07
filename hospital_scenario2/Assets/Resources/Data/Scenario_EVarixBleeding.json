@@ -1,0 +1,883 @@
+{
+  "localization_url": "1uFLVZ2IWFxpSN2xMXSS6hGpYfJ3x9r8IcQl9XhLKnEo",
+  "localization_sheets": [
+    "common",
+    "common_skill",
+    "scenario_evarixbleeding"
+  ],
+  "patient_talk_path": "Data/EVarixBleeding/TalkData_EVarixBleeding",
+  "emr": "Data/EVarixBleeding/EMR_EVarixBleeding",
+  "scenario_name": "evarixbleeding",
+  "star_range": [
+    0,
+    40,
+    70,
+    100
+  ],
+  "tooltip_data": [
+    "common.0"
+  ],
+  "tooltable_setting": [
+    {
+      "table_name": "vital_sign",
+      "tool_setting": [
+        {
+          "tool_name": "0",
+          "available_spot": [
+            0,
+            1,
+            2
+          ],
+          "duplicate": 0,
+          "value1": [
+            "0"
+          ]
+        },
+        {
+          "tool_name": "1",
+          "available_spot": [
+            0,
+            1,
+            2
+          ],
+          "duplicate": 0,
+          "value1": [
+            "1"
+          ]
+        },
+        {
+          "tool_name": "2",
+          "available_spot": [
+            0,
+            1,
+            2
+          ],
+          "duplicate": 0,
+          "value1": [
+            "2"
+          ]
+        },
+        {
+          "tool_name": "3",
+          "available_spot": [
+            3,
+            4
+          ],
+          "duplicate": 0
+        },
+        {
+          "tool_name": "4",
+          "available_spot": [
+            5,
+            6
+          ],
+          "duplicate": 0
+        },
+        {
+          "tool_name": "5",
+          "available_spot": [
+            23,
+            24
+          ],
+          "duplicate": 0
+        }
+      ]
+    },
+    {
+      "table_name": "blood_draw",
+      "tool_setting": [
+        {
+          "tool_name": "8",
+          "available_spot": [
+            113,
+            114
+          ],
+          "duplicate": 1
+        },
+        {
+          "tool_name": "7",
+          "available_spot": [
+            111,
+            112
+          ],
+          "duplicate": 1,
+          "value1": [
+            "60"
+          ]
+        },
+        {
+          "tool_name": "74",
+          "available_spot": [
+            61
+          ],
+          "duplicate": 2
+        },
+        {
+          "tool_name": "11",
+          "available_spot": [],
+          "duplicate": 1,
+          "value1": [
+            "7",
+            "Plain",
+            "혈액은행검사(Plain)"
+          ],
+          "value2": [
+            "10",
+            "Plain"
+          ]
+        },
+        {
+          "tool_name": "12",
+          "available_spot": [],
+          "duplicate": 1,
+          "value1": [
+            "7",
+            "EDTA",
+            "일반혈액검사(EDTA)"
+          ],
+          "value2": [
+            "9",
+            "EDTA"
+          ]
+        }
+      ]
+    },
+    {
+      "table_name": "medication_vial",
+      "tool_setting": [
+        {
+          "tool_name": "11",
+          "available_spot": [],
+          "duplicate": 1,
+          "value1": [
+            "5",
+            "Glypressin",
+            "2mg",
+            "Inj"
+          ],
+          "value2": [
+            "2",
+            "IV Bolus STAT"
+          ],
+          "value3": [
+            "Glypressin 2mg",
+            "",
+            "IVF"
+          ]
+        },
+        {
+          "tool_name": "13",
+          "available_spot": [
+            46
+          ],
+          "duplicate": 1
+        },
+        {
+          "tool_name": "23",
+          "available_spot": [],
+          "duplicate": 1,
+          "value1": [
+            "WFI"
+          ],
+        },
+        {
+          "tool_name": "73",
+          "available_spot": [],
+          "duplicate": 0,
+          "value1": [
+            "Glypressin",
+            "60ml"
+          ]
+        },
+        {
+          "tool_name": "8",
+          "available_spot": [
+            42
+          ],
+          "duplicate": 1
+        }
+      ]
+    },
+    {
+      "table_name": "medication_dw100",
+      "tool_setting": [
+        {
+          "tool_name": "11",
+          "available_spot": [],
+          "duplicate": 1,
+          "value1": [
+            "6",
+            "DW",
+            "100mL",
+            "+ Pantoloc 80mg"
+          ],
+          "value2": [
+            "1",
+            "IV Mix. 10cc/hr"
+          ],
+          "value3": [
+            "Pantoloc 80mg + 5% DW 100mL",
+            "",
+            "IVF"
+          ]
+        },
+        {
+          "tool_name": "8",
+          "available_spot": [
+            42
+          ],
+          "duplicate": 1
+        },
+        {
+          "tool_name": "14",
+          "available_spot": [
+            21
+          ],
+          "duplicate": 1,
+          "value1": [
+            "DW",
+            "100mL"
+          ]
+        },
+        {
+          "tool_name": "22",
+          "available_spot": [
+            41
+          ],
+          "duplicate": 1,
+          "value1": [
+            "60"
+          ]
+        },
+        {
+          "tool_name": "13",
+          "available_spot": [
+            46
+          ],
+          "duplicate": 1
+        },
+        {
+          "tool_name": "73",
+          "available_spot": [],
+          "duplicate": 0,
+          "value1": [
+            "Pantoloc",
+            "80mg"
+          ]
+        }
+      ]
+    },
+    {
+      "table_name": "medication_ns100",
+      "tool_setting": [
+        {
+          "tool_name": "11",
+          "available_spot": [],
+          "duplicate": 1,
+          "value1": [
+            "6",
+            "NS",
+            "100mL",
+            "+ Cefotaxime 2g"
+          ],
+          "value2": [
+            "7",
+            "IV Mix"
+          ],
+          "value3": [
+            "Cefotaxime 2g + NS 100mL",
+            "10cc/hr",
+            "IVF"
+          ]
+        },
+        {
+          "tool_name": "8",
+          "available_spot": [
+            42
+          ],
+          "duplicate": 1
+        },
+        {
+          "tool_name": "14",
+          "available_spot": [
+            93
+          ],
+          "duplicate": 1,
+          "value1": [
+            "NS",
+            "100mL"
+          ]
+        },
+        {
+          "tool_name": "22",
+          "available_spot": [
+            41
+          ],
+          "duplicate": 1,
+          "value1": [
+            "120"
+          ]
+        },
+        {
+          "tool_name": "13",
+          "available_spot": [
+            46
+          ],
+          "duplicate": 1
+        },
+        {
+          "tool_name": "73",
+          "available_spot": [],
+          "duplicate": 0,
+          "value1": [
+            "Cefotaxime",
+            "2g"
+          ]
+        }
+      ]
+    },
+    {
+      "table_name": "iv_bolus",
+      "tool_setting": [
+        {
+          "tool_name": "7",
+          "available_spot": [
+            111,
+            112
+          ],
+          "duplicate": 1
+        },
+        {
+          "tool_name": "8",
+          "available_spot": [
+            113,
+            114
+          ],
+          "duplicate": 1
+        },
+        {
+          "tool_name": "9",
+          "available_spot": [
+            61,
+            110
+          ],
+          "duplicate": 1
+        },
+        {
+          "tool_name": "10",
+          "available_spot": [
+            55
+          ],
+          "duplicate": 1
+        },
+        {
+          "tool_name": "29",
+          "available_spot": [
+            17
+          ],
+          "duplicate": 1
+        },
+        {
+          "tool_name": "28",
+          "available_spot": [
+            16
+          ],
+          "duplicate": 1
+        }
+      ]
+    },
+    {
+      "table_name": "infusion_therapy",
+      "tool_setting": [
+        {
+          "tool_name": "8",
+          "available_spot": [],
+          "duplicate": 1
+        },
+        {
+          "tool_name": "10",
+          "available_spot": [],
+          "duplicate": 1
+        },
+        {
+          "tool_name": "15",
+          "available_spot": [
+            48
+          ],
+          "duplicate": 1,
+          "value1": [
+            "10"
+          ]
+        }
+      ]
+    },
+    {
+      "table_name": "piggy_back",
+      "tool_setting": [
+        {
+          "tool_name": "7",
+          "available_spot": [
+            13,
+            14
+          ],
+          "duplicate": 1
+        },
+        {
+          "tool_name": "8",
+          "available_spot": [
+            13
+          ],
+          "duplicate": 1
+        },
+        {
+          "tool_name": "9",
+          "available_spot": [
+            7,
+            8
+          ],
+          "duplicate": 1
+        },
+        {
+          "tool_name": "10",
+          "available_spot": [
+            9
+          ],
+          "duplicate": 1
+        },
+        {
+          "tool_name": "70",
+          "available_spot": [
+            79
+          ],
+          "duplicate": 0,
+          "value1": [
+            "92",
+            "93"
+          ]
+        },
+        {
+          "tool_name": "60",
+          "available_spot": [
+            92
+          ],
+          "duplicate": 0,
+          "value1": [
+            "5ds",
+            "1000mL"
+          ]
+        }
+      ]
+    }
+  ],
+  "plog_datas": [
+    {
+      "skill_key": "iv_bolus.glypressin.iv_bolus.plog",
+      "plog_key": "evarixbleeding.plog_quiz.1"
+    },
+    {
+      "skill_key": "infusion_therapy.mixed_pantoloc_dw.infusion_pump.10.plog",
+      "plog_key": "evarixbleeding.plog_quiz.2"
+    },
+    {
+      "skill_key": "iv_piggyback.mixed_cefotaxime_ns.iv_piggyback.plog",
+      "plog_key": "evarixbleeding.plog_quiz.3"
+    }
+  ],
+  "stage": [
+    {
+      "id": "0",
+      "stage_event": {
+        "patient_data": {
+          "ecg_graph": "ecg_normal",
+          "pleth_graph": "pleth_normal",
+          "rr_graph": "rr_normal",
+          "hr_min": 105,
+          "hr_max": 105,
+          "rr_min": 20,
+          "rr_max": 20,
+          "bp_sp": 95,
+          "bp_dp": 80,
+          "spo2_min": 0.97,
+          "spo2_max": 0.97,
+          "bt": 36.8,
+          "face_animation": "idle",
+          "bode_animation": "idle",
+          "rhythm": "Normal sinus rhythm",
+          "breath_sound": "NormalBreathSound",
+          "heart_sound": "NormalHeartSound",
+          "bowel_sound": "NormalBowelSound"
+        }
+      },
+      "tool_settings": [],
+      "skill_settings": [
+        "patient_talk",
+        "bracelet"
+      ],
+      "correct_skills": [
+        {
+          "skill": "patient_talk",
+          "result": [
+            "identification.1"
+          ],
+          "total_progress": 0.0325
+        },
+        {
+          "skill": "patient_talk",
+          "result": [
+            "identification.2"
+          ],
+          "total_progress": 0.0325
+        },
+        {
+          "skill": "bracelet",
+          "result": [],
+          "total_progress": 0.065
+        }
+      ],
+      "next_stage": "1",
+      "additional_event": {
+        "time_event": [
+          {
+            "type": "loop",
+            "time": 60,
+            "send_message": {
+              "function_name": "UnActionHelp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "1",
+      "tool_settings": [
+        "vital_sign"
+      ],
+      "skill_settings": [
+        "patient_talk",
+        "bracelet",
+        "vital_sign",
+        "bp_check"
+      ],
+      "correct_skills": [
+        {
+          "skill": "vital_sign",
+          "result": [
+            "ecg_cable"
+          ],
+          "total_progress": 0.03
+        },
+        {
+          "skill": "vital_sign",
+          "result": [
+            "spo2_sensor"
+          ],
+          "total_progress": 0.03
+        },
+        {
+          "skill": "vital_sign",
+          "result": [
+            "tympanic_temperature"
+          ],
+          "total_progress": 0.03
+        },
+        {
+          "skill": "bp_check",
+          "result": [],
+          "total_progress": 0.03
+        }
+      ],
+      "next_stage": "2",
+      "additional_event": {
+        "time_event": [
+          {
+            "type": "loop",
+            "time": 60,
+            "send_message": {
+              "function_name": "UnActionHelp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "2",
+      "stage_event": {},
+      "tool_settings": [
+        "vital_sign",
+        "doctor_call"
+      ],
+      "skill_settings": [
+        "patient_talk",
+        "bracelet",
+        "vital_sign",
+        "bp_check",
+        "doctor_call"
+      ],
+      "correct_skills": [
+        {
+          "skill": "doctor_call",
+          "result": [
+            "0",
+            "1",
+            "2",
+            "3"
+          ],
+          "total_progress": 0.12
+        }
+      ],
+      "next_stage": "3",
+      "additional_event": {
+        "time_event": [
+          {
+            "type": "once",
+            "time": 60,
+            "send_message": {
+              "function_name": "UnActionHelp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "3",
+      "stage_event": {
+        "order": {
+          "laboratory_test": [
+            {
+              "title": "Order.1.Add.1",
+              "list": [
+                "Order.1.Add.1.0"
+              ]
+            },
+            {
+              "title": "Order.1.Add.2",
+              "list": [
+                "Order.1.Add.2.0",
+                "Order.1.Add.2.1"
+              ]
+            }
+          ]
+        }
+      },
+      "tool_settings": [
+        "vital_sign",
+        "blood_draw"
+      ],
+      "skill_settings": [
+        "patient_talk",
+        "bracelet",
+        "vital_sign",
+        "bp_check",
+        "blood_draw"
+      ],
+      "correct_skills": [
+        {
+          "skill": "vein_blood_sampling",
+          "result": [],
+          "total_progress": 0.17
+        }
+      ],
+      "next_stage": "4",
+      "additional_event": {
+        "time_event": [
+          {
+            "type": "once",
+            "time": 60,
+            "send_message": {
+              "function_name": "UnActionHelp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "4",
+      "stage_event": {
+        "order": {
+          "add": [
+            {
+              "key": "Order.2.Add.1"
+            },
+            {
+              "key": "Order.3.Add.1"
+            }
+          ]
+        }
+      },
+      "tool_settings": [
+        "vital_sign",
+        "medication_vial"
+      ],
+      "skill_settings": [
+        "patient_talk",
+        "bracelet",
+        "vital_sign",
+        "bp_check",
+        "medication",
+        "iv_bolus"
+      ],
+      "correct_skills": [
+        {
+          "skill": "iv_bolus",
+          "result": [
+            "glypressin",
+            "iv_bolus"
+          ],
+          "total_progress": 0.12
+        }
+      ],
+      "next_stage": "5",
+      "additional_event": {
+        "time_event": [
+          {
+            "type": "once",
+            "time": 60,
+            "send_message": {
+              "function_name": "UnActionHelp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "5",
+      "stage_event": {
+        "order": {
+          "add": [
+            {
+              "key": "Order.3.Add.2"
+            },
+            {
+              "key": "Order.3.Add.3",
+              "alert": false
+            }
+          ]
+        }
+      },
+      "tool_settings": [
+        "vital_sign",
+        "medication_dw100"
+      ],
+      "skill_settings": [
+        "patient_talk",
+        "bracelet",
+        "vital_sign",
+        "bp_check",
+        "medication",
+        "infusion_therapy"
+      ],
+      "correct_skills": [
+        {
+          "skill": "infusion_therapy",
+          "result": [
+            "mixed_pantoloc_dw",
+            "infusion_pump",
+            "10"
+          ],
+          "total_progress": 0.17
+        }
+      ],
+      "next_stage": "6",
+      "additional_event": {
+        "time_event": [
+          {
+            "type": "loop",
+            "time": 60,
+            "send_message": {
+              "function_name": "UnActionHelp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "6",
+      "stage_event": {
+        "order": {
+          "add": [
+            {
+              "key": "Order.3.Add.4"
+            },
+            {
+              "key": "Order.3.Add.5",
+              "alert": false
+            }
+          ]
+        }
+      },
+      "tool_settings": [
+        "vital_sign",
+        "medication_ns100"
+      ],
+      "skill_settings": [
+        "patient_talk",
+        "bracelet",
+        "vital_sign",
+        "bp_check",
+        "medication",
+        "piggy_back"
+      ],
+      "correct_skills": [
+        {
+          "skill": "iv_piggyback",
+          "result": [
+            "mixed_cefotaxime_ns"
+          ],
+          "total_progress": 0.17
+        }
+      ],
+      "next_stage": "7-1",
+      "additional_event": {
+        "time_event": [
+          {
+            "type": "once",
+            "time": 60,
+            "send_message": {
+              "function_name": "UnActionHelp"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "7-1",
+      "stage_event": {
+        "send_message": [
+          {
+            "function_name": "AddPatientLog",
+            "param": "stage.7-1.plog"
+          }
+        ]
+      },
+      "tool_settings": [],
+      "skill_settings": [],
+      "correct_skills": [],
+      "next_stage": ""
+    },
+    {
+      "id": "7-2",
+      "stage_event": {
+        "patient_data": {
+          "hr_min": 130,
+          "hr_max": 130,
+          "rr_min": 22,
+          "rr_max": 22,
+          "bp_sp": 70,
+          "bp_dp": 50,
+          "spo2_min": 0.9,
+          "spo2_max": 0.9
+        },
+        "send_message": [
+          {
+            "function_name": "AddPatientLog",
+            "param": "stage.7-2.plog"
+          }
+        ]
+      },
+      "tool_settings": [],
+      "skill_settings": [],
+      "correct_skills": [],
+      "next_stage": ""
+    }
+  ]
+}
