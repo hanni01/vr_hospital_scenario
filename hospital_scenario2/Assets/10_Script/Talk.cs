@@ -17,7 +17,6 @@ public class Talk : MonoBehaviour
     public GameObject Answer_canvas2;
     public GameObject Answer_canvas3;
 
-    public bool LordingDegree ;
     public void canvas_clicked()
     {
         talk_canvas.SetActive(false);
@@ -30,7 +29,6 @@ public class Talk : MonoBehaviour
         LordingDegreePlus();
         Answer_canvas1.SetActive(true);
         StartCoroutine(sleep_on(Answer_canvas1));
-        LordingDegreePlus();
         talk_canvas2.SetActive(true);
     }
 
@@ -41,7 +39,6 @@ public class Talk : MonoBehaviour
         Answer_canvas1.SetActive(false);
         Answer_canvas2.SetActive(true);
         StartCoroutine(sleep_on(Answer_canvas2));
-        LordingDegreePlus();
         talk_canvas3.SetActive(true);
     }
 
@@ -58,7 +55,6 @@ public class Talk : MonoBehaviour
         LordingDegreePlus();
         Answer_canvas3.SetActive(true);
         StartCoroutine(sleep_on(Answer_canvas3));
-        LordingDegreePlus();
         talk_canvas5.SetActive(true);
     }
 
@@ -79,11 +75,12 @@ public class Talk : MonoBehaviour
     IEnumerator sleep_on(GameObject obj)
     {
         yield return new WaitForSeconds(4.0f);
+        LordingDegreePlus();
         obj.SetActive(false);
     }
 
     public void LordingDegreePlus()
     {
-        LordingDegree = true;   
+        GameObject.Find("ProgressUI").GetComponent<Overall_Progress>().degree += 1;  
     }
 }
