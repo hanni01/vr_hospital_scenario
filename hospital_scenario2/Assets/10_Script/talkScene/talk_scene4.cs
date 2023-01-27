@@ -61,7 +61,7 @@ public class talk_scene4 : MonoBehaviour
         LordingDegreePlus();
         charAnimator.SetBool("Angry", true);
         Answer_canvas2.SetActive(true);
-        StartCoroutine(sleep_on(Answer_canvas2));
+        StartCoroutine(twice(Answer_canvas2));
         talk_canvas3.SetActive(true);
     }
     public void canvas3_1_clicked()
@@ -146,7 +146,7 @@ public class talk_scene4 : MonoBehaviour
         talk_canvas9.SetActive(false);
         LordingDegreePlus();
         Answer_canvas10.SetActive(true);
-        StartCoroutine(sleep_on(Answer_canvas10));
+        StartCoroutine(twice(Answer_canvas10));
         talk_canvas11.SetActive(true);
     }
 
@@ -167,6 +167,8 @@ public class talk_scene4 : MonoBehaviour
         
         if(chekScore.badScore >= 2)
         {
+            Answer_canvasX2.SetActive(true);
+            StartCoroutine(twice(Answer_canvasX2));
             talk_canvasX3.SetActive(true);
             Debug.Log(chekScore.badScore+": badEnding cross");
             charAnimator.SetBool("HEAD", true);
@@ -195,13 +197,14 @@ public class talk_scene4 : MonoBehaviour
             chekScore.PO1_17+= 1;
 
             Answer_canvas14.SetActive(true);
-            StartCoroutine(sleep_on(Answer_canvas14));
+            StartCoroutine(twice(Answer_canvas14));
             talk_canvas15.SetActive(true);
         }
         else
         {
             if(chekScore.badScore >= 2)
             {
+                Answer_canvasX2.SetActive(false);
                 Answer_canvas8_1.SetActive(true);
                 StartCoroutine(badEnding(Answer_canvas8_1));
                 Debug.Log("badEnding");
@@ -209,10 +212,11 @@ public class talk_scene4 : MonoBehaviour
             }
             else
             {
+                Answer_canvasX2.SetActive(false);
                 chekScore.badScore+= 1;
 
                 Answer_canvas14.SetActive(true);
-                StartCoroutine(sleep_on(Answer_canvas14));
+                StartCoroutine(twice(Answer_canvas14));
                 talk_canvas15.SetActive(true);
                 Debug.Log("Good");
             }
@@ -272,7 +276,7 @@ public class talk_scene4 : MonoBehaviour
         LordingDegreePlus();
         charAnimator.SetBool("DownHead", true);
         Answer_canvas20.SetActive(true);
-        StartCoroutine(sleep_on(Answer_canvas20));
+        StartCoroutine(twice(Answer_canvas20));
         talk_canvas21.SetActive(true);
     }
 
@@ -299,19 +303,24 @@ public class talk_scene4 : MonoBehaviour
 
     IEnumerator sleep_on(GameObject obj)
     {
-        yield return new WaitForSeconds(4.0f);
         LordingDegreePlus();
+        yield return new WaitForSeconds(8.5f);
         obj.SetActive(false);
     }
 
     IEnumerator badEnding(GameObject obj)
     {
-        yield return new WaitForSeconds(4.0f);
-        LordingDegreePlus();
-        obj.SetActive(false);
         charAnimator.SetBool("Angry", false);
-
+        LordingDegreePlus();
+        yield return new WaitForSeconds(5.0f);
+        obj.SetActive(false);
         retryCanvas.SetActive(true);
+    }
+
+    IEnumerator twice(GameObject obj)
+    {
+        yield return new WaitForSeconds(10.0f);
+        StartCoroutine(sleep_on(obj));
     }
 
     public void LordingDegreePlus()

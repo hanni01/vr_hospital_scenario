@@ -36,7 +36,7 @@ public class talk_scene5 : MonoBehaviour
         LordingDegreePlus();
         charAnimator.SetBool("HEAD", true);
         Answer_canvas2.SetActive(true);
-        StartCoroutine(sleep_on(Answer_canvas2));
+        StartCoroutine(twice(Answer_canvas2));
         talk_canvas3.SetActive(true);
 
         chekScore.PO1_17+= 1;
@@ -50,7 +50,7 @@ public class talk_scene5 : MonoBehaviour
             LordingDegreePlus();
         }
         Answer_canvas4.SetActive(true);
-        StartCoroutine(sleep_on(Answer_canvas4));
+        StartCoroutine(twice(Answer_canvas4));
         talk_canvas5.SetActive(true);
 
         chekScore.badScore+= 1;
@@ -62,7 +62,7 @@ public class talk_scene5 : MonoBehaviour
         talk_canvas3.SetActive(false);
         LordingDegreePlus();
         Answer_canvas4.SetActive(true);
-        StartCoroutine(sleep_on(Answer_canvas4));
+        StartCoroutine(twice(Answer_canvas4));
         talk_canvas5.SetActive(true);
     }
 
@@ -149,9 +149,15 @@ public class talk_scene5 : MonoBehaviour
     }
     IEnumerator sleep_on(GameObject obj)
     {
-        yield return new WaitForSeconds(4.0f);
         LordingDegreePlus();
+        yield return new WaitForSeconds(5.0f);
         obj.SetActive(false);
+    }
+
+    IEnumerator twice(GameObject obj)
+    {
+        yield return new WaitForSeconds(10.0f);
+        StartCoroutine(sleep_on(obj));
     }
 
     public void LordingDegreePlus()

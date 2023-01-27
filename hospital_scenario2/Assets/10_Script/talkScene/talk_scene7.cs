@@ -38,8 +38,8 @@ public class talk_scene7 : MonoBehaviour
 
     IEnumerator sleep_on(GameObject obj)
     {
-        yield return new WaitForSeconds(4.0f);
         LordingDegreePlus();
+        yield return new WaitForSeconds(5.0f);
         obj.SetActive(false);
     }
 

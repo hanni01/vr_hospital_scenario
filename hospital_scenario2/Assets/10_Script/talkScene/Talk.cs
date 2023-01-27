@@ -89,6 +89,7 @@ public class Talk : MonoBehaviour
     public void canvas5_clicked()
     {
         GameObject clickObject = EventSystem.current.currentSelectedGameObject;
+        Answer_canvas3.SetActive(false);
         if(clickObject.name == "Q1_btn1")
         {
             audioSource.clip = correct;
@@ -132,8 +133,8 @@ public class Talk : MonoBehaviour
 
     IEnumerator sleep_on(GameObject obj)
     {
-        yield return new WaitForSeconds(4.0f);
         LordingDegreePlus();
+        yield return new WaitForSeconds(7.0f);
         obj.SetActive(false);
     }
 

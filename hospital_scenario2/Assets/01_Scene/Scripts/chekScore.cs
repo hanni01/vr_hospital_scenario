@@ -39,6 +39,23 @@ public class chekScore : MonoBehaviour
 
     int total = 0;
 
+    private void Start() {
+        badScore = 0;
+        PO1_1 = 0;
+        PO1_2 = 0;
+        PO1_3 = 0;
+        PO1_17 = 0;
+        PO1_20 = 0;
+        PO3_4 = 0;
+        PO3_5 = 0;
+        PO3_8 = 0;
+        PO3_9 = 0;
+        PO3_10 = 0;
+        PO3_11 = 0;
+        PO3_12 = 0;
+        PO3_13 = 0;
+        PO3_14 = 0;
+    }
     void Update()
     {
         po1_1.text = PO1_1+"/1";

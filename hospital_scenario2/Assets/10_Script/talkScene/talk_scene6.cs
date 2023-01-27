@@ -97,21 +97,27 @@ public class talk_scene6 : MonoBehaviour
     }
     IEnumerator sleep_on(GameObject obj)
     {
-        yield return new WaitForSeconds(4.0f);
         LordingDegreePlus();
+        yield return new WaitForSeconds(5.0f);
         obj.SetActive(false);
     }
 
     IEnumerator wait_next(GameObject obj)
     {
-        yield return new WaitForSeconds(4.0f);
-        obj.SetActive(false);
-        LordingDegreePlus();
-        Answer_canvas3.SetActive(true);
         chrAnimator.SetBool("HEAD", false);
         chrAnimator.SetBool("Angry", true);
-        StartCoroutine(sleep_on(Answer_canvas3));
+        LordingDegreePlus();
+        yield return new WaitForSeconds(15.0f);
+        obj.SetActive(false);
+        Answer_canvas3.SetActive(true);
+        StartCoroutine(twice(Answer_canvas3));
         talk_canvas4.SetActive(true);
+    }
+
+    IEnumerator twice(GameObject obj)
+    {
+        yield return new WaitForSeconds(10.0f);
+        StartCoroutine(sleep_on(obj));
     }
 
     public void LordingDegreePlus()

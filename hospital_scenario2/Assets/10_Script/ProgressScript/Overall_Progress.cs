@@ -13,6 +13,6 @@ public class Overall_Progress : MonoBehaviour
     {
         ProceduralImage.fillAmount = (float)degree/66;
         int textValue = degree;
-        Percentage.text = string.Format("{0:F1}",textValue.ToString()) + "/"+ " 66";
+        Percentage.text = string.Format("{0:F1}",textValue.ToString()) + "/"+ " 62";
     }
 }
